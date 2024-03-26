@@ -1,0 +1,404 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: ruta.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ruta.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ruta"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : ruta
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\reg_estado\reg_estado.vhd" into library work
+Parsing entity <reg_estado>.
+Parsing architecture <Behavioral> of entity <reg_estado>.
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\registro\registro.vhd" into library work
+Parsing entity <registro>.
+Parsing architecture <Behavioral> of entity <registro>.
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\ruta\ruta.vhd" into library work
+Parsing entity <ruta>.
+Parsing architecture <Behavioral> of entity <ruta>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <ruta> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <registro> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_estado> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ruta>.
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\ruta\ruta.vhd".
+WARNING:Xst:647 - Input <operacion> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit adder for signal <suma_aux> created at line 81.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <ruta> synthesized.
+
+Synthesizing Unit <registro>.
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\registro\registro.vhd".
+    Found 4-bit register for signal <q_aux>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <registro> synthesized.
+
+Synthesizing Unit <reg_estado>.
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\reg_estado\reg_estado.vhd".
+    Found 3-bit register for signal <q_aux>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <reg_estado> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 3
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+# Multiplexers                                         : 5
+ 4-bit 2-to-1 multiplexer                              : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 16
+ 4-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ruta> ...
+
+Optimizing unit <registro> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ruta, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 11
+ Flip-Flops                                            : 11
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ruta.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 26
+#      INV                         : 1
+#      LUT2                        : 6
+#      LUT3                        : 3
+#      LUT4                        : 3
+#      LUT5                        : 2
+#      LUT6                        : 9
+#      MUXF7                       : 2
+# FlipFlops/Latches                : 11
+#      FDCE                        : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 14
+#      OBUF                        : 7
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              11  out of  18224     0%  
+ Number of Slice LUTs:                   24  out of   9112     0%  
+    Number used as Logic:                24  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     24
+   Number with an unused Flip Flop:      13  out of     24    54%  
+   Number with an unused LUT:             0  out of     24     0%  
+   Number of fully used LUT-FF pairs:    11  out of     24    45%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  22  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 11    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.444ns (Maximum Frequency: 290.331MHz)
+   Minimum input arrival time before clock: 3.590ns
+   Maximum output required time after clock: 3.820ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.444ns (frequency: 290.331MHz)
+  Total number of paths / destination ports: 70 / 11
+-------------------------------------------------------------------------
+Delay:               3.444ns (Levels of Logic = 3)
+  Source:            reg_r/q_aux_1 (FF)
+  Destination:       reg_d/q_aux_1 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: reg_r/q_aux_1 to reg_d/q_aux_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.447   0.878  reg_r/q_aux_1 (reg_r/q_aux_1)
+     LUT2:I0->O            1   0.203   0.827  Madd_suma_aux_lut<1>1 (Madd_suma_aux_lut<1>)
+     LUT6:I2->O            1   0.203   0.580  reg_d/mux512_F (N17)
+     LUT3:I2->O            1   0.205   0.000  reg_d/mux5121 (reg_d/sel[1]_q_aux[3]_wide_mux_0_OUT<1>)
+     FDCE:D                    0.102          reg_d/q_aux_1
+    ----------------------------------------
+    Total                      3.444ns (1.160ns logic, 2.284ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 64 / 30
+-------------------------------------------------------------------------
+Offset:              3.590ns (Levels of Logic = 4)
+  Source:            s (PAD)
+  Destination:       reg_d/q_aux_2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: s to reg_d/q_aux_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   1.138  s_IBUF (s_IBUF)
+     LUT6:I0->O            1   0.203   0.000  reg_d/mux611_G (N16)
+     MUXF7:I1->O           1   0.140   0.580  reg_d/mux611 (reg_d/mux61)
+     LUT6:I5->O            1   0.205   0.000  reg_d/mux613 (reg_d/sel[1]_q_aux[3]_wide_mux_0_OUT<2>)
+     FDCE:D                    0.102          reg_d/q_aux_2
+    ----------------------------------------
+    Total                      3.590ns (1.872ns logic, 1.717ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              3.820ns (Levels of Logic = 1)
+  Source:            reg_d/q_aux_1 (FF)
+  Destination:       suma<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: reg_d/q_aux_1 to suma<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.447   0.802  reg_d/q_aux_1 (reg_d/q_aux_1)
+     OBUF:I->O                 2.571          suma_1_OBUF (suma<1>)
+    ----------------------------------------
+    Total                      3.820ns (3.018ns logic, 0.802ns route)
+                                       (79.0% logic, 21.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.444|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.09 secs
+ 
+--> 
+
+Total memory usage is 146220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

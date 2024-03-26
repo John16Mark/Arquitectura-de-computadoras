@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Mar 19 23:01:38 2024
+# Process ID: 352
+# Log file: C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/pa.fromHdl.tcl}
+# create_project -name top_instruccion -dir "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/planAhead_run_2" -part xc6slx16csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "top_instruccion.ucf" [current_fileset -constrset]
+Adding file 'C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/top_instruccion.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../reg_estado/reg_estado.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../registro/registro.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../ruta/ruta.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../control/control.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {top_instruccion.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top top_instruccion $srcset
+# add_files [list {top_instruccion.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx16csg324-3
+Using Verific elaboration
+Parsing VHDL file "E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "E:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/reg_estado/reg_estado.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/registro/registro.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/ruta/ruta.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/control/control.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/top_instruccion.vhd" into library work
+Loading clock regions from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockRegion.xml
+Loading clock buffers from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/ClockBuffers.xml
+Loading package pin functions from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx16/csg324/Package.xml
+Loading io standards from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from E:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : E:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/top_instruccion.ucf]
+Finished Parsing UCF File [C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion/top_instruccion.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 5ece8ada
+open_rtl_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 507.867 ; gain = 89.699
+update_compile_order -fileset sim_1
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/top_instruccion\planAhead_pid352.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Mar 19 23:05:51 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead

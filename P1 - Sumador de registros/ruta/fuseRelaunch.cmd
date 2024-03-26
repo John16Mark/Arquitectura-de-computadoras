@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/ruta/ruta_isim_beh.exe" -prj "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/ruta/ruta_beh.prj" "work.ruta" 

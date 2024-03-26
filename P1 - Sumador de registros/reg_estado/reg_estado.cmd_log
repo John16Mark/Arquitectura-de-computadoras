@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/reg_estado/reg_estado.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/reg_estado/reg_estado.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/reg_estado/reg_estado.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/reg_estado/reg_estado.syr" 

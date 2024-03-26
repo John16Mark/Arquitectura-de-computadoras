@@ -1,0 +1,3 @@
+vhdl work "../reg_estado/reg_estado.vhd"
+vhdl work "../registro/registro.vhd"
+vhdl work "ruta.vhd"

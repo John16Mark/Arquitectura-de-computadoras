@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\top_instruccion\top_instruccion.ncd
+OUTFILE=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\top_instruccion\top_instruccion.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\top_instruccion
+LICENSE=WebPack
+USER_INFO=213007101_0_0_057
