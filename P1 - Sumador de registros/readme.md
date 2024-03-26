@@ -54,7 +54,7 @@ sel en 0 (no estamos realizando la operación)
 
 ### Ruta
 ![Diseño del componente ruta](/P1%20-%20Sumador%20de%20registros/ruta_1.png)
-Diseño detallado del componente
+<br>Diseño detallado del componente
 ![Diseño detallado del componente ruta](/P1%20-%20Sumador%20de%20registros/ruta_2.png)
 El componente ruta es el que se encarga de realizar las operaciones y calcular las banderas.
 Contiene dos componentes **registro**, que representan el registro destino y el registro fuente.
