@@ -1,0 +1,29 @@
+Command line:
+   ruta_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1076
+
+Wed Mar 20 01:08:13 2024
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 320.684 Meg
+
+ Total Signals          : 43
+ Total Nets             : 70
+ Total Signal Drivers   : 15
+ Total Blocks           : 8
+ Total Primitive Blocks : 7
+ Total Processes        : 15
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 448
+Total Line Count : 46
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 320.684 Meg
+
+Wed Mar 20 01:08:23 2024
+

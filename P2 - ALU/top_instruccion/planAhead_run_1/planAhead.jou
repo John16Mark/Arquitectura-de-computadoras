@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Mar 20 01:12:10 2024
+# Process ID: 480
+# Log file: C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/planAhead_run_1/planAhead.log
+# Journal file: C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin T11 [get_ports {banderas[2]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {banderas[1]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {banderas[0]}]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports {D[3]}]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports {D[2]}]
+endgroup
+startgroup
+set_property package_pin N8 [get_ports {D[1]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {D[0]}]
+endgroup
+startgroup
+set_property package_pin M8 [get_ports {R[3]}]
+endgroup
+startgroup
+set_property package_pin V9 [get_ports {R[2]}]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports {R[1]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {R[0]}]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports {resultado[3]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {resultado[2]}]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports {resultado[1]}]
+endgroup
+startgroup
+set_property package_pin U16 [get_ports {resultado[0]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {operacion[2]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports {operacion[1]}]
+endgroup
+startgroup
+set_property package_pin D9 [get_ports {operacion[0]}]
+endgroup
+save_constraints
+startgroup
+set_property package_pin V10 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin A8 [get_ports clr]
+endgroup
+startgroup
+set_property package_pin B8 [get_ports inicio]
+endgroup
+save_constraints

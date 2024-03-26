@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ruta.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ruta.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ruta.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ruta.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ruta.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ruta.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ruta.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ruta.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="ruta.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="ruta.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ruta.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ruta.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="ruta.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ruta.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ruta.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="ruta.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="ruta.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="ruta.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="ruta.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ruta.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ruta_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ruta_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ruta_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ruta_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ruta_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ruta_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ruta_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ruta_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ruta_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ruta_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ruta_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="ruta_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ruta_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ruta_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ruta_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ruta_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ruta_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ruta_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1710917066" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917066" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../ALU/ALU.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../registro/registro.vhd"/>
+      <outfile xil_pn:name="ruta.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917066" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5183078457917615105" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917066" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1710469627321858435" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917066" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="287546695155730412" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917066" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../ALU/ALU.vhd"/>
+      <outfile xil_pn:name="../reg_estado/reg_estado.vhd"/>
+      <outfile xil_pn:name="../registro/registro.vhd"/>
+      <outfile xil_pn:name="ruta.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917069" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8357279654018411921" xil_pn:start_ts="1710917066">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="ruta_beh.prj"/>
+      <outfile xil_pn:name="ruta_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1710917097" xil_pn:in_ck="2943161937117617611" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8282026083528647938" xil_pn:start_ts="1710917097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="ruta_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4703029203573766275" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="287546695155730412" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5183078457917615105" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1710820257" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2488493466556938614" xil_pn:start_ts="1710820257">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1711446177" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-9013055258221350139" xil_pn:start_ts="1711446167">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="ruta.lso"/>
+      <outfile xil_pn:name="ruta.ngc"/>
+      <outfile xil_pn:name="ruta.ngr"/>
+      <outfile xil_pn:name="ruta.prj"/>
+      <outfile xil_pn:name="ruta.stx"/>
+      <outfile xil_pn:name="ruta.syr"/>
+      <outfile xil_pn:name="ruta.xst"/>
+      <outfile xil_pn:name="ruta_beh.prj"/>
+      <outfile xil_pn:name="ruta_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1710825945" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4475728998351467348" xil_pn:start_ts="1710825945">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1711446184" xil_pn:in_ck="5014260768066" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2201390376539632969" xil_pn:start_ts="1711446178">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="ruta.bld"/>
+      <outfile xil_pn:name="ruta.ngd"/>
+      <outfile xil_pn:name="ruta_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1711446197" xil_pn:in_ck="5014260768067" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1711446184">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="ruta.pcf"/>
+      <outfile xil_pn:name="ruta_map.map"/>
+      <outfile xil_pn:name="ruta_map.mrp"/>
+      <outfile xil_pn:name="ruta_map.ncd"/>
+      <outfile xil_pn:name="ruta_map.ngm"/>
+      <outfile xil_pn:name="ruta_map.xrpt"/>
+      <outfile xil_pn:name="ruta_summary.xml"/>
+      <outfile xil_pn:name="ruta_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1711446214" xil_pn:in_ck="5946519231120217564" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1711446197">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="ruta.ncd"/>
+      <outfile xil_pn:name="ruta.pad"/>
+      <outfile xil_pn:name="ruta.par"/>
+      <outfile xil_pn:name="ruta.ptwx"/>
+      <outfile xil_pn:name="ruta.unroutes"/>
+      <outfile xil_pn:name="ruta.xpi"/>
+      <outfile xil_pn:name="ruta_pad.csv"/>
+      <outfile xil_pn:name="ruta_pad.txt"/>
+      <outfile xil_pn:name="ruta_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1711446214" xil_pn:in_ck="5014260767935" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1711446207">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="ruta.twr"/>
+      <outfile xil_pn:name="ruta.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

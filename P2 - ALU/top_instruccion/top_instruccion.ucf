@@ -1,0 +1,24 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "banderas[2]" LOC = T11;
+NET "banderas[1]" LOC = R11;
+NET "banderas[0]" LOC = N11;
+NET "D[3]" LOC = T5;
+NET "D[2]" LOC = V8;
+NET "D[1]" LOC = N8;
+NET "D[0]" LOC = U8;
+NET "R[3]" LOC = M8;
+NET "R[2]" LOC = V9;
+NET "R[1]" LOC = T10;
+NET "R[0]" LOC = T9;
+NET "resultado[3]" LOC = V15;
+NET "resultado[2]" LOC = U15;
+NET "resultado[1]" LOC = V16;
+NET "resultado[0]" LOC = U16;
+NET "operacion[2]" LOC = C4;
+NET "operacion[1]" LOC = C9;
+NET "operacion[0]" LOC = D9;
+NET "clk" LOC = V10;
+NET "clr" LOC = A8;
+NET "inicio" LOC = B8;

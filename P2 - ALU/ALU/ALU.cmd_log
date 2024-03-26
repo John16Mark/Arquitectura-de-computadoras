@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU.syr" 

@@ -1,0 +1,10 @@
+Command line:
+   registro_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1051
+
+Mon Mar 18 20:34:48 2024
+
+
+ Elaboration Time: 0.078125 sec

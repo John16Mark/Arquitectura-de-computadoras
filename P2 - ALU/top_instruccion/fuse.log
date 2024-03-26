@@ -1,0 +1,31 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/top_instruccion_isim_beh.exe -prj C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/top_instruccion_beh.prj work.top_instruccion 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/../reg_estado/reg_estado.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/../registro/registro.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/../ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/../ruta/ruta.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/../control/control.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/top_instruccion.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 66700 KB
+Fuse CPU Usage: 374 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity registro [registro_default]
+Compiling architecture behavioral of entity reg_estado [reg_estado_default]
+Compiling architecture behavioral of entity ruta [ruta_default]
+Compiling architecture behavioral of entity control [control_default]
+Compiling architecture behavioral of entity top_instruccion
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Built simulation executable C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/top_instruccion/top_instruccion_isim_beh.exe
+Fuse Memory Usage: 83664 KB
+Fuse CPU Usage: 530 ms

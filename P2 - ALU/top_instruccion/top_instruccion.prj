@@ -1,0 +1,6 @@
+vhdl work "../reg_estado/reg_estado.vhd"
+vhdl work "../registro/registro.vhd"
+vhdl work "../ALU/ALU.vhd"
+vhdl work "../ruta/ruta.vhd"
+vhdl work "../control/control.vhd"
+vhdl work "top_instruccion.vhd"
