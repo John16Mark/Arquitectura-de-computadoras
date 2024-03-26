@@ -1,8 +1,11 @@
 # Práctica 1 - Sumador de registros
+Esta práctica consiste en simular una instrucción sencilla entre registros.
+Los registros operandos serán un registro destino y un registro fuente
+Tendremos dos salidas que representarán el resultado de la instrucción y las banderas activadas por la instrucción.
 
 ### Registro
 ![Diseño del componente registro](/P1%20-%20Sumador%20de%20registros/registro.png)
-El componente registro se encarga de la carga y almacenamiento de datos. Para la práctica manejamos palabras de 4 bits.
+<br>El componente registro se encarga de la carga y almacenamiento de datos. Para la práctica manejamos palabras de 4 bits.
 Dependiendo de la entrada **sel** realizará una operación determinada:
 
 | sel | Operación |
@@ -16,7 +19,7 @@ Nótese que para la práctica, las únicas dos operaciones que usaremos serán 0
 
 ### Registro estado (banderas)
 ![Diseño del componente registro estado](/P1%20-%20Sumador%20de%20registros/registro_estado.png)
-Este componente es una modificación a registro que representa los registros *status* que almacenan las banderas.
+<br>Este componente es una modificación a registro que representa los registros *status* que almacenan las banderas.
 Dependiendo de la entrada **sel** realizará una operación determinada:
 
 | sel | Operación |
@@ -33,7 +36,7 @@ Las banderas se calculan en el componente **ruta**, registro estado solo se enca
 
 ### Control
 ![Diseño del componente control](/P1%20-%20Sumador%20de%20registros/control.png)
-Este componente controla la retención y carga de los registros, además de encargarse de que se realice la operación.
+<br>Este componente controla la retención y carga de los registros, además de encargarse de que se realice la operación.
 Las salidas sd, y sr le indican a los registros destino y fuente (respectivamente) qué operación realizar.
 La salida sel le indica al componente **ruta** si cargamos la entrada D o la señal ya con el resultado de la operación al componente registro destino.
 La entrada inicio indica si queremos que realice la operación. Para la práctica, inicio será una entrada botón, que al presionarlo hará la operación.
@@ -56,6 +59,13 @@ sel en 0 (no estamos realizando la operación)
 ![Diseño del componente ruta](/P1%20-%20Sumador%20de%20registros/ruta_1.png)
 <br>Diseño detallado del componente
 ![Diseño detallado del componente ruta](/P1%20-%20Sumador%20de%20registros/ruta_2.png)
-El componente ruta es el que se encarga de realizar las operaciones y calcular las banderas.
+<br>El componente ruta es el que se encarga de realizar las operaciones y calcular las banderas.
 Contiene dos componentes **registro**, que representan el registro destino y el registro fuente.
 Ruta depende del componente control para sus entradas **rd**, **rr**, y **s**
+
+### Top - Instrucción
+![Diseño del componente ruta](/P1%20-%20Sumador%20de%20registros/top_instruccion_1.png)
+<br>Diseño detallado del circuito
+![Diseño detallado del circuito](/P1%20-%20Sumador%20de%20registros/top_instruccion_2.png)
+<br>El top engloba toda la práctica, como entradas tiene la señal de reloj (**clk**), clear (**clr**), las entradas para los registros **D** y **R**, y el botón **inicio**.
+Tenemos como salidas el resultado de la operación (**suma**) y las banderas de la operación (**banderas**).
