@@ -40,7 +40,7 @@ Las banderas se calculan en el componente **ruta**, registro estado solo se enca
 Las salidas sd, y sr le indican a los registros destino y fuente (respectivamente) qué operación realizar.
 La salida sel le indica al componente **ruta** si cargamos la entrada D o la señal ya con el resultado de la operación al componente registro destino.
 La entrada inicio indica si queremos que realice la operación. Para la práctica, inicio será una entrada botón, que al presionarlo hará la operación.
-Para su funcionamiento usa transiciones de estados:
+Para su funcionamiento usa transiciones de estados:<br>
 ![Diagrama de estados del componente control](/P1%20-%20Sumador%20de%20registros/control_estados.png)
 * **carga:**
 registro destino en carga
