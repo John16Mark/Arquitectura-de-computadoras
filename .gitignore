@@ -1,16 +1,16 @@
-P1 - Sumador de registros/registro.pdn
-P1 - Sumador de registros/registro_estado.pdn
-P1 - Sumador de registros/control.pdn
-P1 - Sumador de registros/control_estados.pdn
-P1 - Sumador de registros/ruta_2.pdn
-P1 - Sumador de registros/ruta_1.pdn
-P1 - Sumador de registros/top_instruccion_1.pdn
-P1 - Sumador de registros/top_instruccion_2.pdn
-P2 - ALU/ruta_1.pdn
-P2 - ALU/ruta_2.pdn
-P2 - ALU/ALU.pdn
-P2 - ALU/top_instruccion_1.pdn
-P2 - ALU/top_instruccion_2.pdn
+P1. Sumador de registros/registro.pdn
+P1. Sumador de registros/registro_estado.pdn
+P1. Sumador de registros/control.pdn
+P1. Sumador de registros/control_estados.pdn
+P1. Sumador de registros/ruta_2.pdn
+P1. Sumador de registros/ruta_1.pdn
+P1. Sumador de registros/top_instruccion_1.pdn
+P1. Sumador de registros/top_instruccion_2.pdn
+P2. ALU/ruta_1.pdn
+P2. ALU/ruta_2.pdn
+P2. ALU/ALU.pdn
+P2. ALU/top_instruccion_1.pdn
+P2. ALU/top_instruccion_2.pdn
 /flecha.png
 P3. Pila/program_counter.pdn
 P3. Pila/stack_pointer.pdn
