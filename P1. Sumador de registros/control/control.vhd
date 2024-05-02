@@ -39,10 +39,12 @@ entity control is
 end control;
 
 architecture Behavioral of control is
+
 -- Estados
 type estados is (carga, suma, final);
 -- Señal auxiliar
 signal edo_pres, edo_sig: estados;
+
 begin
 
 	process (edo_pres, inicio)

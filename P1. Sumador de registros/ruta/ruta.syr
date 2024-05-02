@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: ruta.prj
 
@@ -131,8 +131,7 @@ Elaborating entity <reg_estado> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <ruta>.
     Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica1\ruta\ruta.vhd".
-WARNING:Xst:647 - Input <operacion> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 5-bit adder for signal <suma_aux> created at line 81.
+    Found 5-bit adder for signal <suma_aux> created at line 80.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   1 Multiplexer(s).
@@ -263,7 +262,7 @@ Slice Logic Distribution:
    Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          25
+ Number of IOs:                          22
  Number of bonded IOBs:                  22  out of    232     9%  
 
 Specific Feature Utilization:
@@ -391,14 +390,14 @@ clk            |    3.444|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.09 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.42 secs
  
 --> 
 
 Total memory usage is 146220 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="3217" delta="old" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">q_aux</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_dato</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">SP/q_aux_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">top_pila</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">memoria/Mram_dato15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">PC/q_aux_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">top_pila</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

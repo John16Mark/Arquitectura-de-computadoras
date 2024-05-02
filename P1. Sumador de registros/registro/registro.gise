@@ -50,7 +50,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="registro.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="registro.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="registro.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="registro_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="registro_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="registro_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="registro_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="registro_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="registro_isim_beh.wdb"/>
@@ -162,13 +163,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1710815525" xil_pn:in_ck="5921422731400966879" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-800939213030817320" xil_pn:start_ts="1710815514">
+    <transform xil_pn:end_ts="1714608822" xil_pn:in_ck="5921422731400966879" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-800939213030817320" xil_pn:start_ts="1714608813">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="registro.lso"/>
       <outfile xil_pn:name="registro.ngc"/>
@@ -177,6 +174,7 @@
       <outfile xil_pn:name="registro.stx"/>
       <outfile xil_pn:name="registro.syr"/>
       <outfile xil_pn:name="registro.xst"/>
+      <outfile xil_pn:name="registro_beh.prj"/>
       <outfile xil_pn:name="registro_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -188,7 +186,8 @@
     <transform xil_pn:end_ts="1710815533" xil_pn:in_ck="5921422731400958133" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-619771190435713494" xil_pn:start_ts="1710815526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="registro.bld"/>

@@ -3,3 +3,5 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "registro.
 map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o registro_map.ncd registro.ngd registro.pcf 
 par -w -intstyle ise -ol high -mt off registro_map.ncd registro.ncd registro.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml registro.twx registro.ncd -o registro.twr registro.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/registro/registro.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/registro/registro.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/registro/registro.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica1/registro/registro.syr" 

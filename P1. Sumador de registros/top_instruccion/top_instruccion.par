@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-JUAN::  Mon Mar 25 20:35:59 2024
+JUAN::  Wed May 01 19:46:40 2024
 
 par -w -intstyle ise -ol high -mt off top_instruccion_map.ncd
 top_instruccion.ncd top_instruccion.pcf 
@@ -95,13 +95,13 @@ Finished initial Timing Analysis.  REAL time: 6 secs
 Starting Router
 
 
-Phase  1  : 93 unrouted;      REAL time: 6 secs 
+Phase  1  : 93 unrouted;      REAL time: 7 secs 
 
-Phase  2  : 87 unrouted;      REAL time: 6 secs 
+Phase  2  : 87 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 24 unrouted;      REAL time: 6 secs 
+Phase  3  : 24 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 24 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 24 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: top_instruccion.ncd with current fully routed design.
 
@@ -154,7 +154,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 9 secs 
 Total CPU time to PAR completion: 9 secs 
 
 Peak Memory Usage:  199 MB

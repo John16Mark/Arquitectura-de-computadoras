@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\top_pila\top_pila.ncd
+OUTFILE=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\top_pila\top_pila.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\top_pila
+LICENSE=WebPack
+USER_INFO=213007101_0_0_057

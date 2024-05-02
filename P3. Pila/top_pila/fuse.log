@@ -1,0 +1,29 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/top_pila_isim_beh.exe -prj C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/top_pila_beh.prj work.top_pila 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/../stack_pointer/stack_pointer.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/../RAM/RAM.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/../program_counter/program_counter.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/../clk_divisor/clk_divisor.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/top_pila.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 66700 KB
+Fuse CPU Usage: 390 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity program_counter [program_counter_default]
+Compiling architecture behavioral of entity RAM [ram_default]
+Compiling architecture behavioral of entity stack_pointer [stack_pointer_default]
+Compiling architecture behavioral of entity clk_divisor [clk_divisor_default]
+Compiling architecture behavioral of entity top_pila
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/top_pila/top_pila_isim_beh.exe
+Fuse Memory Usage: 83664 KB
+Fuse CPU Usage: 562 ms

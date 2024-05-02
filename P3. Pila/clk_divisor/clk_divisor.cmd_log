@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/clk_divisor/clk_divisor.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/clk_divisor/clk_divisor.syr" 

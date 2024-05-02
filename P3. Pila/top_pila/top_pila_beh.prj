@@ -1,0 +1,5 @@
+vhdl work "../stack_pointer/stack_pointer.vhd"
+vhdl work "../RAM/RAM.vhd"
+vhdl work "../program_counter/program_counter.vhd"
+vhdl work "../clk_divisor/clk_divisor.vhd"
+vhdl work "top_pila.vhd"

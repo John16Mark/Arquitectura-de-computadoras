@@ -1,0 +1,23 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = V10;
+NET "clr" LOC = A8;
+NET "botones[5]" LOC = T5;
+NET "botones[4]" LOC = V8;
+NET "botones[3]" LOC = U8;
+NET "botones[2]" LOC = N8;
+NET "botones[1]" LOC = M8;
+NET "botones[0]" LOC = V9;
+NET "s1s0[1]" LOC = T9;
+NET "s1s0[0]" LOC = T10;
+NET "leds[5]" LOC = T11;
+NET "leds[4]" LOC = R11;
+NET "leds[3]" LOC = N11;
+NET "leds[2]" LOC = M11;
+NET "leds[1]" LOC = V15;
+NET "leds[0]" LOC = U15;
