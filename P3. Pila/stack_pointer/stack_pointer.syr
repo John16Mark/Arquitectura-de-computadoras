@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: stack_pointer.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Users\Prueba\Desktop\Practica3\stack_pointer\stack_pointer.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\stack_pointer\stack_pointer.vhd" into library work
 Parsing entity <stack_pointer>.
 Parsing architecture <Behavioral> of entity <stack_pointer>.
 
@@ -120,8 +120,8 @@ Elaborating entity <stack_pointer> (architecture <Behavioral>) from library <wor
 =========================================================================
 
 Synthesizing Unit <stack_pointer>.
-    Related source file is "C:\Users\Prueba\Desktop\Practica3\stack_pointer\stack_pointer.vhd".
-    Found 3-bit register for signal <Q>.
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\stack_pointer\stack_pointer.vhd".
+    Found 3-bit register for signal <O>.
     Summary:
 	inferred   3 D-type flip-flop(s).
 Unit <stack_pointer> synthesized.
@@ -267,15 +267,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              2.302ns (Levels of Logic = 1)
   Source:            clr (PAD)
-  Destination:       q_aux_0 (FF)
+  Destination:       o_aux_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: clr to q_aux_0
+  Data Path: clr to o_aux_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             3   1.222   0.650  clr_IBUF (clr_IBUF)
-     FDP:PRE                   0.430          q_aux_0
+     FDP:PRE                   0.430          o_aux_0
     ----------------------------------------
     Total                      2.302ns (1.652ns logic, 0.650ns route)
                                        (71.8% logic, 28.2% route)
@@ -285,16 +285,16 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 3 / 3
 -------------------------------------------------------------------------
 Offset:              3.597ns (Levels of Logic = 1)
-  Source:            q_aux_2 (FF)
-  Destination:       Q<2> (PAD)
+  Source:            o_aux_2 (FF)
+  Destination:       O<2> (PAD)
   Source Clock:      clk rising
 
-  Data Path: q_aux_2 to Q<2>
+  Data Path: o_aux_2 to O<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              1   0.447   0.579  q_aux_2 (q_aux_2)
-     OBUF:I->O                 2.571          Q_2_OBUF (Q<2>)
+     FDP:C->Q              1   0.447   0.579  o_aux_2 (o_aux_2)
+     OBUF:I->O                 2.571          O_2_OBUF (O<2>)
     ----------------------------------------
     Total                      3.597ns (3.018ns logic, 0.579ns route)
                                        (83.9% logic, 16.1% route)
@@ -307,12 +307,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.70 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.98 secs
  
 --> 
 
-Total memory usage is 4486444 kilobytes
+Total memory usage is 145132 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

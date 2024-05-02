@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Apr 11 18:35:41 2024">
+<application name="pn" timeStamp="Wed May 01 21:13:05 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="DE12A99BF9D044A5874CEE07D6753589" type="project"/>
 <property name="ProjectIteration" value="0" type="project"/>
-<property name="ProjectFile" value="C:/Users/Prueba/Desktop/Practica3/stack_pointer/stack_pointer.xise" type="project"/>
+<property name="ProjectFile" value="C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/stack_pointer/stack_pointer.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2024-04-05T20:35:11" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">

@@ -165,7 +165,7 @@ Unit <RAM> synthesized.
 
 Synthesizing Unit <stack_pointer>.
     Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica3\stack_pointer\stack_pointer.vhd".
-    Found 3-bit register for signal <q_aux>.
+    Found 3-bit register for signal <o_aux>.
     Summary:
 	inferred   3 D-type flip-flop(s).
 Unit <stack_pointer> synthesized.
@@ -225,7 +225,7 @@ The following registers are absorbed into counter <q_aux>: 1 register on signal 
 Unit <clk_divisor> synthesized (advanced).
 
 Synthesizing (advanced) Unit <top_pila>.
-The following registers are absorbed into accumulator <SP/q_aux>: 1 register on signal <SP/q_aux>.
+The following registers are absorbed into accumulator <SP/o_aux>: 1 register on signal <SP/o_aux>.
 Unit <top_pila> synthesized (advanced).
 
 =========================================================================
@@ -257,7 +257,7 @@ Macro Statistics
 Optimizing unit <program_counter> ...
 
 Optimizing unit <top_pila> ...
-WARNING:Xst:1710 - FF/Latch <SP/q_aux_0> (without init value) has a constant value of 1 in block <top_pila>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <SP/o_aux_0> (without init value) has a constant value of 1 in block <top_pila>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <memoria/Mram_dato7> of sequential type is unconnected in block <top_pila>.
 WARNING:Xst:2677 - Node <memoria/Mram_dato10> of sequential type is unconnected in block <top_pila>.
 WARNING:Xst:2677 - Node <memoria/Mram_dato8> of sequential type is unconnected in block <top_pila>.
@@ -411,16 +411,16 @@ Timing constraint: Default period analysis for Clock 'CD/q_aux_27'
   Total number of paths / destination ports: 87 / 26
 -------------------------------------------------------------------------
 Delay:               3.371ns (Levels of Logic = 3)
-  Source:            SP/q_aux_2 (FF)
+  Source:            SP/o_aux_2 (FF)
   Destination:       PC/q_aux_5 (FF)
   Source Clock:      CD/q_aux_27 rising
   Destination Clock: CD/q_aux_27 rising
 
-  Data Path: SP/q_aux_2 to PC/q_aux_5
+  Data Path: SP/o_aux_2 to PC/q_aux_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDP:C->Q              2   0.447   0.721  SP/q_aux_2 (SP/q_aux_2)
+     FDP:C->Q              2   0.447   0.721  SP/o_aux_2 (SP/o_aux_2)
      LUT3:I1->O           12   0.203   0.908  Mmux_sp_aux_ret_o31 (sp_aux_ret_o<2>)
      RAM16X1S:A2->O        1   0.205   0.580  memoria/Mram_dato3 (rd_aux<2>)
      LUT5:I4->O            1   0.205   0.000  pc_aux_i<2>1 (pc_aux_i<2>)
@@ -564,7 +564,7 @@ clk            |    2.180|         |         |         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.20 secs
+Total CPU time to Xst completion: 8.45 secs
  
 --> 
 

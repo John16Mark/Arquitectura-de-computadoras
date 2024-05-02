@@ -41,7 +41,7 @@ end RAM;
 architecture Behavioral of RAM is
 
 -- Arreglo que representa la memoria
-type ram is array ( 7 downto 0) of STD_LOGIC_VECTOR (15 downto 0);
+type ram is array (7 downto 0) of STD_LOGIC_VECTOR (15 downto 0);
 
 -- Señal para el arreglo
 signal dato : ram;

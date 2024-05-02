@@ -33,26 +33,26 @@ entity stack_pointer is
     Port ( clk : in  STD_LOGIC;
            clr : in  STD_LOGIC;
            I : in  STD_LOGIC_VECTOR (2 downto 0);
-           Q : out  STD_LOGIC_VECTOR (2 downto 0));
+           O : out  STD_LOGIC_VECTOR (2 downto 0));
 end stack_pointer;
 
 architecture Behavioral of stack_pointer is
 
 -- Señal auxiliar
-signal q_aux: STD_LOGIC_VECTOR (2 downto 0);
+signal o_aux: STD_LOGIC_VECTOR (2 downto 0);
 
 begin
 
 	process (clk, clr)
 	begin
 		if (clr = '1') then
-			q_aux <= "111";
+			o_aux <= "111";
 		elsif (clk'event and clk = '1') then
-			q_aux <= I;
+			o_aux <= I;
 		end if;
 	end process;
 	
-	Q <= q_aux;
+	O <= o_aux;
 
 end Behavioral;
 

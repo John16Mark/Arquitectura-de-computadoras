@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-04-05T20:16:48</DateModified>
+  <DateModified>2024-05-01T21:06:13</DateModified>
   <ModuleName>RAM</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/RAM/iseconfig/RAM.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/RAM</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica3/RAM\</ImplementationReportsDirectory>
   <DateInitialized>2024-04-05T20:16:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

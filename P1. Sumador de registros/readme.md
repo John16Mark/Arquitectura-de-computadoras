@@ -64,7 +64,7 @@ Contiene dos componentes **registro**, que representan el registro destino y el 
 Ruta depende del componente control para sus entradas **rd**, **rr**, y **s**
 
 ### Top - Instrucción
-![Diseño del componente ruta](/P1.%20Sumador%20de%20registros/top_instruccion_1.png)
+![Diseño del circuito instrucción](/P1.%20Sumador%20de%20registros/top_instruccion_1.png)
 <br>Diseño detallado del circuito
 ![Diseño detallado del circuito](/P1.%20Sumador%20de%20registros/top_instruccion_2.png)
 <br>El top engloba toda la práctica, como entradas tiene la señal de reloj (**clk**), clear (**clr**), las entradas para los registros **D** y **R**, y el botón **inicio**.

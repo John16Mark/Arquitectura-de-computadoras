@@ -10,7 +10,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 17 23:25:06 2024
+Mapped Date    : Wed May 01 21:15:54 2024
 
 Mapping design into LUTs...
 Running directed packing...

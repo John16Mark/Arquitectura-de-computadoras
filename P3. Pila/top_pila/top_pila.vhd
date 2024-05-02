@@ -51,7 +51,7 @@ component stack_pointer is
     Port ( clk : in  STD_LOGIC;
            clr : in  STD_LOGIC;
            I : in  STD_LOGIC_VECTOR (2 downto 0);
-           Q : out  STD_LOGIC_VECTOR (2 downto 0));
+           O : out  STD_LOGIC_VECTOR (2 downto 0));
 end component;
 
 component RAM is
@@ -113,7 +113,7 @@ begin
 	Port map (	clk => clock_div,
 					clr => clr,
 					I => sp_aux_i,
-					Q => sp_aux_o );
+					O => sp_aux_o );
 	
 	CD: clk_divisor
 	Port map (	clk => clk,

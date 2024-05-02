@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-JUAN::  Wed Apr 17 23:25:18 2024
+JUAN::  Wed May 01 21:16:06 2024
 
 par -w -intstyle ise -ol high -mt off top_pila_map.ncd top_pila.ncd
 top_pila.pcf 
@@ -167,7 +167,7 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 8 secs 
+Total REAL time to PAR completion: 9 secs 
 Total CPU time to PAR completion: 8 secs 
 
 Peak Memory Usage:  197 MB
