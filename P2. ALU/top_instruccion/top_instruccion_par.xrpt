@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Tue Mar 26 03:44:59 2024">
+  <application stringID="par" timeStamp="Wed May 01 20:19:23 2024">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -1538,7 +1538,7 @@
           </row>
           <row stringID="row" value="224">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="N8"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="D&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="D&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L40N_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1914,7 +1914,7 @@
           </row>
           <row stringID="row" value="279">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="T9"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="R&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="R&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L32P_GCLK29_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -1927,7 +1927,7 @@
           </row>
           <row stringID="row" value="280">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="T10"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="R&lt;1>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="R&lt;0>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L29N_GCLK2_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -2045,7 +2045,7 @@
           </row>
           <row stringID="row" value="296">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="U8"/>
-            <item label="Signal&#xA;Name" stringID="Signal_Name" value="D&lt;0>"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="D&lt;1>"/>
             <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L41P_2"/>
             <item stringID="Direction" value="INPUT"/>
@@ -2296,7 +2296,7 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Tue Mar 26 03:45:00 2024">
+  <application stringID="Par" timeStamp="Wed May 01 20:19:23 2024">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>

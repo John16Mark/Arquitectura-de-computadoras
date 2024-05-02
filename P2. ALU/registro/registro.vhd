@@ -38,8 +38,10 @@ entity registro is
 end registro;
 
 architecture Behavioral of registro is
+
 -- Señal auxiliar
 signal q_aux : std_logic_vector (3 downto 0);
+
 begin
 
 	process (clr,clk)

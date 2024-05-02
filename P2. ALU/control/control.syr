@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: control.prj
 
@@ -366,7 +366,7 @@ clk            |    2.056|         |         |         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.89 secs
+Total CPU time to Xst completion: 8.08 secs
  
 --> 
 

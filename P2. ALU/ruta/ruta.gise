@@ -165,11 +165,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1711446177" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-9013055258221350139" xil_pn:start_ts="1711446167">
+    <transform xil_pn:end_ts="1714612368" xil_pn:in_ck="-6443959684697791802" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-9013055258221350139" xil_pn:start_ts="1714612358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="ruta.lso"/>
       <outfile xil_pn:name="ruta.ngc"/>
@@ -190,6 +188,8 @@
     <transform xil_pn:end_ts="1711446184" xil_pn:in_ck="5014260768066" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2201390376539632969" xil_pn:start_ts="1711446178">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="ruta.bld"/>
@@ -199,6 +199,7 @@
     <transform xil_pn:end_ts="1711446197" xil_pn:in_ck="5014260768067" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1711446184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="ruta.pcf"/>
       <outfile xil_pn:name="ruta_map.map"/>
@@ -212,6 +213,7 @@
     <transform xil_pn:end_ts="1711446214" xil_pn:in_ck="5946519231120217564" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1711446197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="ruta.ncd"/>
       <outfile xil_pn:name="ruta.pad"/>
@@ -226,6 +228,7 @@
     <transform xil_pn:end_ts="1711446214" xil_pn:in_ck="5014260767935" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1711446207">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="ruta.twr"/>
       <outfile xil_pn:name="ruta.twx"/>

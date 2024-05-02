@@ -38,8 +38,10 @@ entity reg_estado is
 end reg_estado;
 
 architecture Behavioral of reg_estado is
+
 -- Señal auxiliar
 signal q_aux : STD_LOGIC_VECTOR (2 downto 0);
+
 begin
 
 	process (clk, clr)

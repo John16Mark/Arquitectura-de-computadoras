@@ -158,9 +158,9 @@ Unit <ruta> synthesized.
 
 Synthesizing Unit <ALU>.
     Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica2\ALU\ALU.vhd".
-    Found 5-bit adder for signal <A_aux[4]_B_aux[4]_add_2_OUT> created at line 55.
-    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_4_OUT<4:0>> created at line 57.
-    Found 5-bit 8-to-1 multiplexer for signal <F_aux> created at line 53.
+    Found 5-bit adder for signal <A_aux[4]_B_aux[4]_add_2_OUT> created at line 57.
+    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_4_OUT<4:0>> created at line 59.
+    Found 5-bit 8-to-1 multiplexer for signal <F_aux> created at line 55.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   6 Multiplexer(s).
@@ -462,8 +462,8 @@ clk            |    3.649|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.72 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.59 secs
  
 --> 
 

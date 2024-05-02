@@ -41,8 +41,10 @@ entity ALU is
 end ALU;
 
 architecture Behavioral of ALU is
+
 -- Señal auxiliar
 signal F_aux, A_aux, B_aux: STD_LOGIC_VECTOR (4 downto 0);
+
 begin
 
 	A_aux <= '0'&A;

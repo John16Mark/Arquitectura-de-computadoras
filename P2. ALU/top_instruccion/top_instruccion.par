@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-JUAN::  Tue Mar 26 03:44:53 2024
+JUAN::  Wed May 01 20:19:17 2024
 
 par -w -intstyle ise -ol high -mt off top_instruccion_map.ncd
 top_instruccion.ncd top_instruccion.pcf 
@@ -97,11 +97,11 @@ Starting Router
 
 Phase  1  : 200 unrouted;      REAL time: 6 secs 
 
-Phase  2  : 188 unrouted;      REAL time: 6 secs 
+Phase  2  : 188 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 92 unrouted;      REAL time: 7 secs 
+Phase  3  : 106 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 92 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
+Phase  4  : 106 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
 Updating file: top_instruccion.ncd with current fully routed design.
 
