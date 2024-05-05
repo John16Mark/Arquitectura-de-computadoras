@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_isim_beh.exe" -prj "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_beh.prj" "work.top_practica4" 

@@ -1,0 +1,28 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun May 05 14:55:31 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "O_d<3>" LOCATE = SITE "T11" LEVEL 1;
+COMP "btn0" LOCATE = SITE "C4" LEVEL 1;
+COMP "btn1" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn2" LOCATE = SITE "D9" LEVEL 1;
+COMP "O_r<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "O_r<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "O_r<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "O_r<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "clr" LOCATE = SITE "A8" LEVEL 1;
+COMP "en_w" LOCATE = SITE "C9" LEVEL 1;
+COMP "dato_I<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "clr0" LOCATE = SITE "V9" LEVEL 1;
+COMP "clr1" LOCATE = SITE "T9" LEVEL 1;
+COMP "dato_I<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "clr2" LOCATE = SITE "T10" LEVEL 1;
+COMP "dato_I<2>" LOCATE = SITE "V8" LEVEL 1;
+COMP "dato_I<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "O_d<0>" LOCATE = SITE "M11" LEVEL 1;
+COMP "O_d<1>" LOCATE = SITE "N11" LEVEL 1;
+COMP "O_d<2>" LOCATE = SITE "R11" LEVEL 1;
+SCHEMATIC END;
+

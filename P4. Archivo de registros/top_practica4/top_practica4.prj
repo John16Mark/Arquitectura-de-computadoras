@@ -1,0 +1,8 @@
+vhdl work "../registro/registro.vhd"
+vhdl work "../mux_32_1/mux_32_1.vhd"
+vhdl work "../d_5a32/d_5a32.vhd"
+vhdl work "../e_r/e_r.vhd"
+vhdl work "../cont/cont.vhd"
+vhdl work "../clk_divisor/clk_divisor.vhd"
+vhdl work "../archivo_registro/archivo_registro.vhd"
+vhdl work "top_practica4.vhd"

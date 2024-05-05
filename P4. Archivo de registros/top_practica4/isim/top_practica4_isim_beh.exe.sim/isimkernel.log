@@ -1,0 +1,29 @@
+Command line:
+   top_practica4_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1042
+
+Sun May 05 14:17:07 2024
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 324.887 Meg
+
+ Total Signals          : 268
+ Total Nets             : 371
+ Total Signal Drivers   : 87
+ Total Blocks           : 47
+ Total Primitive Blocks : 45
+ Total Processes        : 81
+ Total Traceable Variables  : 44
+ Total Scalar Nets and Variables : 783
+Total Line Count : 205
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 325.935 Meg
+
+Sun May 05 14:33:28 2024
+

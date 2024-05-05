@@ -1,0 +1,4 @@
+vhdl work "../registro/registro.vhd"
+vhdl work "../mux_32_1/mux_32_1.vhd"
+vhdl work "../d_5a32/d_5a32.vhd"
+vhdl work "archivo_registro.vhd"
