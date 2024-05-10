@@ -1,4 +1,6 @@
 # Práctica 3 - Pila
+Esta práctica consiste en simular lo que realiza la computadora a la hora de hacer tres tipos de instrucciones diferentes: instrucciones normales, saltos y regresos.
+Se crearon componentes **Program Counter** (apuntador de instrucción de programa), **Stack Pointer** (apuntador de pila), **RAM** (Memoria de 8 espacios) y un divisor de señal de reloj para que podamos trabajar nosotros físicamente en la tarjeta de desarrollo.
 
 ### Program Counter
 ![Diseño del componente Program Counter](/P3.%20Pila/program_counter.png)
@@ -21,9 +23,9 @@ La entrada **A** será el selector de posición del arreglo y depende del **Stac
 <br>Este componente es para cuestiones didácticas en esta práctica. Sirve como retardador de la señal de reloj divide el tiempo de la señal a la mitad 27 veces para poder realizar las operaciones de forma manual en la FPGA. La salida **q_27** será la señal de reloj de los demás componentes de la práctica.
 
 ### Top - Pila
-![Diseño del circuito Pila](/P3.%20Pila/top_pila_1.png)
-<br>Diseño detallado del circuito
-![Diseño detallado del circuito Pila](/P3.%20Pila/top_pila_2.png)
+![Diseño de la entidad Pila](/P3.%20Pila/top_pila_1.png)
+<br>Diseño detallado de la entidad
+![Diseño detallado de la entidad Pila](/P3.%20Pila/top_pila_2.png)
 <br>El top engloba toda la práctica, como entradas tiene la señal de reloj (**clk**), clear (**clr**), el selector **s1s0** para elegir qué tipo de instrucción es la que llega, la entrada **botones** para cargar la posición a la hora de realizar un salto y la salida **leds** para saber lo que está sucediendo con el **Program Counter**.
 El clock real solo lo tendrá como entrada el componente **clock divisor**, y la salida será la señal de reloj que recibirán los demás componentes.
 | s1s0 | instrucción |

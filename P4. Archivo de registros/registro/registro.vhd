@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity registro is
-	 generic ( N: integer := 4);
+	 generic ( N : integer := 4);
     Port ( clk : in  STD_LOGIC;
            clr : in  STD_LOGIC;
            en : in  STD_LOGIC;

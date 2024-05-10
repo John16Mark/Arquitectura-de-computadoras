@@ -105,28 +105,28 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\registro\registro.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\registro\registro.vhd" into library work
 Parsing entity <registro>.
 Parsing architecture <Behavioral> of entity <registro>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\mux_32_1\mux_32_1.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\mux_32_1\mux_32_1.vhd" into library work
 Parsing entity <mux_32_1>.
 Parsing architecture <Behavioral> of entity <mux_32_1>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\d_5a32\d_5a32.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\d_5a32\d_5a32.vhd" into library work
 Parsing entity <d_5a32>.
 Parsing architecture <Behavioral> of entity <d_5a32>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\e_r\e_r.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\e_r\e_r.vhd" into library work
 Parsing entity <e_r>.
 Parsing architecture <Behavioral> of entity <e_r>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\cont\cont.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\cont\cont.vhd" into library work
 Parsing entity <cont>.
 Parsing architecture <Behavioral> of entity <cont>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\clk_divisor\clk_divisor.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\clk_divisor\clk_divisor.vhd" into library work
 Parsing entity <clk_divisor>.
 Parsing architecture <Behavioral> of entity <clk_divisor>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\archivo_registro\archivo_registro.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\archivo_registro\archivo_registro.vhd" into library work
 Parsing entity <archivo_registro>.
 Parsing architecture <Behavioral> of entity <archivo_registro>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\top_practica4\top_practica4.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\top_practica4\top_practica4.vhd" into library work
 Parsing entity <top_practica4>.
 Parsing architecture <Behavioral> of entity <top_practica4>.
 
@@ -134,7 +134,7 @@ Parsing architecture <Behavioral> of entity <top_practica4>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <top_practica4> (architecture <Behavioral>) from library <work>.
+Elaborating entity <top_practica4> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <clk_divisor> (architecture <Behavioral>) from library <work>.
 
@@ -142,7 +142,7 @@ Elaborating entity <e_r> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <cont> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <archivo_registro> (architecture <Behavioral>) from library <work>.
+Elaborating entity <archivo_registro> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <d_5a32> (architecture <Behavioral>) from library <work>.
 
@@ -155,13 +155,14 @@ Elaborating entity <mux_32_1> (architecture <Behavioral>) with generics from lib
 =========================================================================
 
 Synthesizing Unit <top_practica4>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\top_practica4\top_practica4.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\top_practica4\top_practica4.vhd".
+        N = 4
     Summary:
 	no macro.
 Unit <top_practica4> synthesized.
 
 Synthesizing Unit <clk_divisor>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\clk_divisor\clk_divisor.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\clk_divisor\clk_divisor.vhd".
     Found 19-bit register for signal <q_aux>.
     Found 19-bit adder for signal <q_aux[18]_GND_6_o_add_0_OUT> created at line 51.
     Summary:
@@ -170,7 +171,7 @@ Synthesizing Unit <clk_divisor>.
 Unit <clk_divisor> synthesized.
 
 Synthesizing Unit <e_r>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\e_r\e_r.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\e_r\e_r.vhd".
     Found 1-bit register for signal <q1>.
     Found 1-bit register for signal <q0>.
     Found 1-bit register for signal <q2>.
@@ -179,7 +180,7 @@ Synthesizing Unit <e_r>.
 Unit <e_r> synthesized.
 
 Synthesizing Unit <cont>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\cont\cont.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\cont\cont.vhd".
     Found 5-bit register for signal <cont_aux>.
     Found 5-bit adder for signal <cont_aux[4]_GND_8_o_add_0_OUT> created at line 52.
     Summary:
@@ -188,13 +189,14 @@ Synthesizing Unit <cont>.
 Unit <cont> synthesized.
 
 Synthesizing Unit <archivo_registro>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\archivo_registro\archivo_registro.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\archivo_registro\archivo_registro.vhd".
+        N = 4
     Summary:
 	no macro.
 Unit <archivo_registro> synthesized.
 
 Synthesizing Unit <d_5a32>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\d_5a32\d_5a32.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\d_5a32\d_5a32.vhd".
     Found 32x32-bit Read Only RAM for signal <sel_w_d[4]_PWR_10_o_wide_mux_0_OUT>
     Summary:
 	inferred   1 RAM(s).
@@ -202,7 +204,7 @@ Synthesizing Unit <d_5a32>.
 Unit <d_5a32> synthesized.
 
 Synthesizing Unit <registro>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\registro\registro.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\registro\registro.vhd".
         N = 4
     Found 4-bit register for signal <q_aux>.
     Summary:
@@ -210,7 +212,7 @@ Synthesizing Unit <registro>.
 Unit <registro> synthesized.
 
 Synthesizing Unit <mux_32_1>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\mux_32_1\mux_32_1.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\mux_32_1\mux_32_1.vhd".
         N = 4
     Found 4-bit 32-to-1 multiplexer for signal <O> created at line 36.
     Summary:
@@ -554,16 +556,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_div/q_aux_18'
 -------------------------------------------------------------------------
 Offset:              3.826ns (Levels of Logic = 2)
   Source:            en_w (PAD)
-  Destination:       arch_reg/reg0/q_aux_0 (FF)
+  Destination:       arch_reg/instanciar_componentes[0].registros/q_aux_0 (FF)
   Destination Clock: clk_div/q_aux_18 rising
 
-  Data Path: en_w to arch_reg/reg0/q_aux_0
+  Data Path: en_w to arch_reg/instanciar_componentes[0].registros/q_aux_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            32   1.222   1.396  en_w_IBUF (en_w_IBUF)
-     LUT6:I4->O            4   0.203   0.683  arch_reg/decodificador/Mmux_O281 (arch_reg/o_aux<5>)
-     FDCE:CE                   0.322          arch_reg/reg5/q_aux_0
+     LUT6:I4->O            4   0.203   0.683  arch_reg/decodificador/Mmux_O281 (arch_reg/en_aux<5>)
+     FDCE:CE                   0.322          arch_reg/instanciar_componentes[5].registros/q_aux_0
     ----------------------------------------
     Total                      3.826ns (1.747ns logic, 2.079ns route)
                                        (45.7% logic, 54.3% route)
@@ -671,15 +673,15 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_div/q_aux_18'
   Total number of paths / destination ports: 256 / 8
 -------------------------------------------------------------------------
 Offset:              5.834ns (Levels of Logic = 4)
-  Source:            arch_reg/reg26/q_aux_3 (FF)
+  Source:            arch_reg/instanciar_componentes[26].registros/q_aux_3 (FF)
   Destination:       O_r<3> (PAD)
   Source Clock:      clk_div/q_aux_18 rising
 
-  Data Path: arch_reg/reg26/q_aux_3 to O_r<3>
+  Data Path: arch_reg/instanciar_componentes[26].registros/q_aux_3 to O_r<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.447   0.864  arch_reg/reg26/q_aux_3 (arch_reg/reg26/q_aux_3)
+     FDCE:C->Q             2   0.447   0.864  arch_reg/instanciar_componentes[26].registros/q_aux_3 (arch_reg/instanciar_componentes[26].registros/q_aux_3)
      LUT6:I2->O            1   0.203   0.827  arch_reg/mux_r/Mmux_O_810 (arch_reg/mux_r/Mmux_O_810)
      LUT6:I2->O            1   0.203   0.000  arch_reg/mux_r/Mmux_O_33 (arch_reg/mux_r/Mmux_O_33)
      MUXF7:I1->O           1   0.140   0.579  arch_reg/mux_r/Mmux_O_2_f7_2 (O_r_3_OBUF)
@@ -760,7 +762,7 @@ sal_aux2       |    2.696|         |         |         |
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.70 secs
+Total CPU time to Xst completion: 8.95 secs
  
 --> 
 

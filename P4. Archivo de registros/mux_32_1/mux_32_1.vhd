@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity mux_32_1 is
-	 generic ( N: integer := 4);
+	 generic ( N : integer := 4);
     Port ( sel_read : in  STD_LOGIC_VECTOR (4 downto 0);
            I : in  STD_LOGIC_VECTOR (127 downto 0);
            O : out  STD_LOGIC_VECTOR (3 downto 0));

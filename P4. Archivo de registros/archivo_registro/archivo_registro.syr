@@ -105,16 +105,16 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\registro\registro.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\registro\registro.vhd" into library work
 Parsing entity <registro>.
 Parsing architecture <Behavioral> of entity <registro>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\mux_32_1\mux_32_1.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\mux_32_1\mux_32_1.vhd" into library work
 Parsing entity <mux_32_1>.
 Parsing architecture <Behavioral> of entity <mux_32_1>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\d_5a32\d_5a32.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\d_5a32\d_5a32.vhd" into library work
 Parsing entity <d_5a32>.
 Parsing architecture <Behavioral> of entity <d_5a32>.
-Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\archivo_registro\archivo_registro.vhd" into library work
+Parsing VHDL file "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\archivo_registro\archivo_registro.vhd" into library work
 Parsing entity <archivo_registro>.
 Parsing architecture <Behavioral> of entity <archivo_registro>.
 
@@ -122,7 +122,7 @@ Parsing architecture <Behavioral> of entity <archivo_registro>.
 *                            HDL Elaboration                            *
 =========================================================================
 
-Elaborating entity <archivo_registro> (architecture <Behavioral>) from library <work>.
+Elaborating entity <archivo_registro> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <d_5a32> (architecture <Behavioral>) from library <work>.
 
@@ -135,13 +135,14 @@ Elaborating entity <mux_32_1> (architecture <Behavioral>) with generics from lib
 =========================================================================
 
 Synthesizing Unit <archivo_registro>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\archivo_registro\archivo_registro.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\archivo_registro\archivo_registro.vhd".
+        N = 4
     Summary:
 	no macro.
 Unit <archivo_registro> synthesized.
 
 Synthesizing Unit <d_5a32>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\d_5a32\d_5a32.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\d_5a32\d_5a32.vhd".
     Found 32x32-bit Read Only RAM for signal <sel_w_d[4]_PWR_4_o_wide_mux_0_OUT>
     Summary:
 	inferred   1 RAM(s).
@@ -149,7 +150,7 @@ Synthesizing Unit <d_5a32>.
 Unit <d_5a32> synthesized.
 
 Synthesizing Unit <registro>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\registro\registro.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\registro\registro.vhd".
         N = 4
     Found 4-bit register for signal <q_aux>.
     Summary:
@@ -157,7 +158,7 @@ Synthesizing Unit <registro>.
 Unit <registro> synthesized.
 
 Synthesizing Unit <mux_32_1>.
-    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\mux_32_1\mux_32_1.vhd".
+    Related source file is "C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\mux_32_1\mux_32_1.vhd".
         N = 4
     Found 4-bit 32-to-1 multiplexer for signal <O> created at line 36.
     Summary:
@@ -333,17 +334,17 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 1024 / 384
 -------------------------------------------------------------------------
 Offset:              4.086ns (Levels of Logic = 2)
-  Source:            sel_w_d<3> (PAD)
-  Destination:       reg31/q_aux_3 (FF)
+  Source:            sel_write_d<3> (PAD)
+  Destination:       instanciar_componentes[31].registros/q_aux_3 (FF)
   Destination Clock: clk rising
 
-  Data Path: sel_w_d<3> to reg31/q_aux_3
+  Data Path: sel_write_d<3> to instanciar_componentes[31].registros/q_aux_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            32   1.222   1.656  sel_w_d_3_IBUF (sel_w_d_3_IBUF)
-     LUT6:I0->O            4   0.203   0.683  decodificador/Mmux_O210 (o_aux<10>)
-     FDCE:CE                   0.322          reg10/q_aux_0
+     IBUF:I->O            32   1.222   1.656  sel_write_d_3_IBUF (sel_write_d_3_IBUF)
+     LUT6:I0->O            4   0.203   0.683  decodificador/Mmux_O210 (en_aux<10>)
+     FDCE:CE                   0.322          instanciar_componentes[10].registros/q_aux_0
     ----------------------------------------
     Total                      4.086ns (1.747ns logic, 2.339ns route)
                                        (42.8% logic, 57.2% route)
@@ -353,19 +354,19 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 256 / 8
 -------------------------------------------------------------------------
 Offset:              5.834ns (Levels of Logic = 4)
-  Source:            reg26/q_aux_3 (FF)
-  Destination:       o_r<3> (PAD)
+  Source:            instanciar_componentes[26].registros/q_aux_3 (FF)
+  Destination:       R<3> (PAD)
   Source Clock:      clk rising
 
-  Data Path: reg26/q_aux_3 to o_r<3>
+  Data Path: instanciar_componentes[26].registros/q_aux_3 to R<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             2   0.447   0.864  reg26/q_aux_3 (reg26/q_aux_3)
+     FDCE:C->Q             2   0.447   0.864  instanciar_componentes[26].registros/q_aux_3 (instanciar_componentes[26].registros/q_aux_3)
      LUT6:I2->O            1   0.203   0.827  mux_r/Mmux_O_810 (mux_r/Mmux_O_810)
      LUT6:I2->O            1   0.203   0.000  mux_r/Mmux_O_33 (mux_r/Mmux_O_33)
-     MUXF7:I1->O           1   0.140   0.579  mux_r/Mmux_O_2_f7_2 (o_r_3_OBUF)
-     OBUF:I->O                 2.571          o_r_3_OBUF (o_r<3>)
+     MUXF7:I1->O           1   0.140   0.579  mux_r/Mmux_O_2_f7_2 (R_3_OBUF)
+     OBUF:I->O                 2.571          R_3_OBUF (R<3>)
     ----------------------------------------
     Total                      5.834ns (3.564ns logic, 2.270ns route)
                                        (61.1% logic, 38.9% route)
@@ -376,17 +377,17 @@ Timing constraint: Default path analysis
 -------------------------------------------------------------------------
 Delay:               7.401ns (Levels of Logic = 5)
   Source:            sel_read_r<1> (PAD)
-  Destination:       o_r<3> (PAD)
+  Destination:       R<3> (PAD)
 
-  Data Path: sel_read_r<1> to o_r<3>
+  Data Path: sel_read_r<1> to R<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            32   1.222   1.656  sel_read_r_1_IBUF (sel_read_r_1_IBUF)
      LUT6:I0->O            1   0.203   0.827  mux_r/Mmux_O_81 (mux_r/Mmux_O_81)
      LUT6:I2->O            1   0.203   0.000  mux_r/Mmux_O_3 (mux_r/Mmux_O_3)
-     MUXF7:I1->O           1   0.140   0.579  mux_r/Mmux_O_2_f7 (o_r_0_OBUF)
-     OBUF:I->O                 2.571          o_r_0_OBUF (o_r<0>)
+     MUXF7:I1->O           1   0.140   0.579  mux_r/Mmux_O_2_f7 (R_0_OBUF)
+     OBUF:I->O                 2.571          R_0_OBUF (R<0>)
     ----------------------------------------
     Total                      7.401ns (4.339ns logic, 3.062ns route)
                                        (58.6% logic, 41.4% route)
@@ -399,8 +400,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.34 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.67 secs
  
 --> 
 

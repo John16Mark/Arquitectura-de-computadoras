@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-05-05T14:50:26</DateModified>
+  <DateModified>2024-05-07T02:45:27</DateModified>
   <ModuleName>top_practica4</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/iseconfig/top_practica4.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/iseconfig/top_practica4.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4\</ImplementationReportsDirectory>
   <DateInitialized>2024-04-24T22:48:20</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

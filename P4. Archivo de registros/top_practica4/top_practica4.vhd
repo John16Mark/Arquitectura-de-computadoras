@@ -30,6 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity top_practica4 is
+	 generic ( N : integer := 4);
     Port (	clk: in STD_LOGIC;
 				clr : in STD_LOGIC;
 				clr0 : in  STD_LOGIC;
@@ -39,9 +40,9 @@ entity top_practica4 is
 				btn1 : in  STD_LOGIC;
 				btn2 : in  STD_LOGIC;
 				en_w : in  STD_LOGIC;
-				O_r : out  STD_LOGIC_VECTOR (3 downto 0);
-				O_d : out  STD_LOGIC_VECTOR (3 downto 0);
-				dato_I : in  STD_LOGIC_VECTOR (3 downto 0));
+				O_r : out  STD_LOGIC_VECTOR (N-1 downto 0);
+				O_d : out  STD_LOGIC_VECTOR (N-1 downto 0);
+				dato_I : in  STD_LOGIC_VECTOR (N-1 downto 0));
 end top_practica4;
 
 architecture Behavioral of top_practica4 is
@@ -66,18 +67,19 @@ component e_r is
 end component;
 
 component archivo_registro is
+	 generic ( N : integer := 4);
     Port ( clk : in  STD_LOGIC;
            clr : in  STD_LOGIC;
            sel_read_d : in  STD_LOGIC_VECTOR (4 downto 0);
            sel_read_r : in  STD_LOGIC_VECTOR (4 downto 0);
-           sel_w_d : in  STD_LOGIC_VECTOR (4 downto 0);
+           sel_write_d : in  STD_LOGIC_VECTOR (4 downto 0);
            en_w : in  STD_LOGIC;
-           dato_I : in  STD_LOGIC_VECTOR (3 downto 0);
-           o_r : out  STD_LOGIC_VECTOR (3 downto 0);
-           o_d : out  STD_LOGIC_VECTOR (3 downto 0));
+           dato : in  STD_LOGIC_VECTOR (N-1 downto 0);
+           R : out  STD_LOGIC_VECTOR (N-1 downto 0);
+           D : out  STD_LOGIC_VECTOR (N-1 downto 0));
 end component;
 
--- Señales auxiliares
+-- Seï¿½ales auxiliares
 signal clk_aux : STD_LOGIC;
 signal sal_aux0, sal_aux1, sal_aux2 : STD_LOGIC;
 signal sel_w_d_aux, sel_r_d_aux, sel_r_r_aux : STD_LOGIC_VECTOR (4 downto 0);
@@ -85,53 +87,53 @@ signal sel_w_d_aux, sel_r_d_aux, sel_r_r_aux : STD_LOGIC_VECTOR (4 downto 0);
 begin
 
 	clk_div: clk_divisor
-	Port Map(	clk => clk,
+	Port Map (	clk => clk,
 					clr => clr,
 					q_18 => clk_aux);
 
 	e_r0: e_r
-	Port map(	ent => btn0,
+	Port map (	ent => btn0,
 						clk => clk_aux,
 						clr => clr0,
 						sal => sal_aux0);
 
 	e_r1: e_r
-	Port map(	ent => btn1,
+	Port map (	ent => btn1,
 						clk => clk_aux,
 						clr => clr1,
 						sal => sal_aux1);
 
 	e_r2: e_r
-	Port map(	ent => btn2,
+	Port map (	ent => btn2,
 						clk => clk_aux,
 						clr => clr2,
 						sal => sal_aux2);
-						
+
 	cont0: cont
-   Port Map(	clk => sal_aux0,
+   Port Map (	clk => sal_aux0,
 					clr => clr0,
 					sal => sel_w_d_aux);
-					
+
 	cont1: cont
-   Port Map(	clk => sal_aux1,
+   Port Map (	clk => sal_aux1,
 					clr => clr1,
 					sal => sel_r_d_aux);
-	
+
 	cont2: cont
-    Port Map(	clk => sal_aux2,
+    Port Map (	clk => sal_aux2,
 					clr => clr2,
 					sal => sel_r_r_aux);
-					
+
 	arch_reg: archivo_registro
    Port Map ( 	clk => clk_aux,
 					clr => clr,
 					sel_read_d => sel_r_d_aux,
 					sel_read_r => sel_r_r_aux,
-					sel_w_d => sel_w_d_aux,
+					sel_write_d => sel_w_d_aux,
 					en_w => en_w,
-					dato_I => dato_I,
-					o_r => O_r,
-					o_d => O_d);
+					dato => dato_I,
+					R => O_r,
+					D => O_d);
 
 end Behavioral;
 

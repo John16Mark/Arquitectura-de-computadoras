@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-JUAN::  Sun May 05 14:55:33 2024
+JUAN::  Tue May 07 02:48:31 2024
 
 par -w -intstyle ise -ol high -mt off top_practica4_map.ncd top_practica4.ncd
 top_practica4.pcf 
@@ -45,12 +45,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    76 out of   2,278    3%
+  Number of occupied Slices:                    80 out of   2,278    3%
   Number of MUXCYs used:                        20 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          232
-    Number with an unused Flip Flop:            66 out of     232   28%
-    Number with an unused LUT:                  88 out of     232   37%
-    Number of fully used LUT-FF pairs:          78 out of     232   33%
+  Number of LUT Flip Flop pairs used:          239
+    Number with an unused Flip Flop:            73 out of     239   30%
+    Number with an unused LUT:                  95 out of     239   39%
+    Number of fully used LUT-FF pairs:          71 out of     239   29%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -99,29 +99,29 @@ Finished initial Timing Analysis.  REAL time: 6 secs
 Starting Router
 
 
-Phase  1  : 1031 unrouted;      REAL time: 6 secs 
+Phase  1  : 1031 unrouted;      REAL time: 7 secs 
 
 Phase  2  : 967 unrouted;      REAL time: 7 secs 
 
-Phase  3  : 446 unrouted;      REAL time: 8 secs 
+Phase  3  : 442 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 446 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Phase  4  : 442 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: top_practica4.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
-Total REAL time to Router completion: 10 secs 
-Total CPU time to Router completion: 10 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Total REAL time to Router completion: 11 secs 
+Total CPU time to Router completion: 11 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -144,17 +144,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.193ns|     N/A|           0
   _div/q_aux_18_BUFG                        | HOLD        |     0.520ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.492ns|     N/A|           0
-  _aux0                                     | HOLD        |     0.448ns|            |       0|           0
+  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.501ns|     N/A|           0
+  _aux0                                     | HOLD        |     0.462ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.811ns|     N/A|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     1.925ns|     N/A|           0
   _BUFGP                                    | HOLD        |     0.529ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.353ns|     N/A|           0
-  _aux1                                     | HOLD        |     0.444ns|            |       0|           0
+  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.364ns|     N/A|           0
+  _aux1                                     | HOLD        |     0.455ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.375ns|     N/A|           0
-  _aux2                                     | HOLD        |     0.466ns|            |       0|           0
+  Autotimespec constraint for clock net sal | SETUP       |         N/A|     1.397ns|     N/A|           0
+  _aux2                                     | HOLD        |     0.462ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,7 +173,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 11 secs 
 Total CPU time to PAR completion: 11 secs 
 
-Peak Memory Usage:  208 MB
+Peak Memory Usage:  209 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

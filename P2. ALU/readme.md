@@ -1,4 +1,5 @@
 # Práctica 2 - ALU
+Esta práctica es similar a la práctica anterior, solo que ahora hacemos uso de un componente extra que será la **ALU** (Unidad Arimético-Lógica) que realizará las operaciones mediante un selector.
 
 ### Registro
 ![Diseño del componente registro](/P1.%20Sumador%20de%20registros/registro.png)
@@ -76,8 +77,8 @@ Contiene dos componentes **registro**, que representan el registro destino y el 
 Ruta depende del componente control para sus entradas **rd**, **rr**, y **s**
 
 ### Top - Instrucción
-![Diseño del circuito instrucción](/P2.%20ALU/top_instruccion_1.png)
-<br>Diseño detallado del circuito
-![Diseño detallado del circuito](/P2.%20ALU/top_instruccion_2.png)
+![Diseño de la entidad instrucción](/P2.%20ALU/top_instruccion_1.png)
+<br>Diseño detallado de la entidad
+![Diseño detallado de la entidad](/P2.%20ALU/top_instruccion_2.png)
 <br>El top engloba toda la práctica, como entradas tiene la señal de reloj (**clk**), clear (**clr**), el selector **operacion**, las entradas para los registros **D** y **R**, y el botón **inicio**.
 Tenemos como salidas el resultado de la operación (**suma**) y las banderas de la operación (**banderas**).

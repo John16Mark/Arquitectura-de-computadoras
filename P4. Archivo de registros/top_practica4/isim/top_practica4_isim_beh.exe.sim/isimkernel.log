@@ -4,26 +4,27 @@ Command line:
      -simrunnum  0
      -socket  1042
 
-Sun May 05 14:17:07 2024
+Tue May 07 02:49:37 2024
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.078125 sec
 
  Current Memory Usage: 324.887 Meg
 
  Total Signals          : 268
  Total Nets             : 371
  Total Signal Drivers   : 87
- Total Blocks           : 47
+ Total Blocks           : 79
  Total Primitive Blocks : 45
  Total Processes        : 81
- Total Traceable Variables  : 44
- Total Scalar Nets and Variables : 783
+ Total Traceable Variables  : 78
+ Total Scalar Nets and Variables : 817
+Total Line Count : 205
 Total Line Count : 205
 
- Total Simulation Time: 0.203125 sec
+ Total Simulation Time: 2.78125 sec
 
  Current Memory Usage: 325.935 Meg
 
-Sun May 05 14:33:28 2024
+Tue May 07 03:00:16 2024
 

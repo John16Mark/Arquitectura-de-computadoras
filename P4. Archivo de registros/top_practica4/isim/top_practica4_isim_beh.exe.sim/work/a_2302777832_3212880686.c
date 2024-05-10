@@ -25,7 +25,7 @@
 
 
 
-extern void work_a_1510982902_3212880686_init()
+extern void work_a_2302777832_3212880686_init()
 {
-	xsi_register_didat("work_a_1510982902_3212880686", "isim/top_practica4_isim_beh.exe.sim/work/a_1510982902_3212880686.didat");
+	xsi_register_didat("work_a_2302777832_3212880686", "isim/top_practica4_isim_beh.exe.sim/work/a_2302777832_3212880686.didat");
 }

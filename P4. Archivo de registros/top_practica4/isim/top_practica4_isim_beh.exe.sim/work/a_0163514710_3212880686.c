@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/cont/cont.vhd";
+static const char *ng0 = "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/cont/cont.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
@@ -49,7 +49,7 @@ static void work_a_0163514710_3212880686_p_0(char *t0)
     char *t18;
     char *t19;
 
-LAB0:    xsi_set_current_line(45, ng0);
+LAB0:    xsi_set_current_line(49, ng0);
     t1 = (t0 + 684U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
@@ -72,8 +72,8 @@ LAB3:    t1 = (t0 + 1868);
     *((int *)t1) = 1;
 
 LAB1:    return;
-LAB2:    xsi_set_current_line(46, ng0);
-    t1 = (t0 + 3583);
+LAB2:    xsi_set_current_line(50, ng0);
+    t1 = (t0 + 3647);
     t6 = (t0 + 1920);
     t7 = (t6 + 32U);
     t8 = *((char **)t7);
@@ -83,10 +83,10 @@ LAB2:    xsi_set_current_line(46, ng0);
     xsi_driver_first_trans_fast(t6);
     goto LAB3;
 
-LAB5:    xsi_set_current_line(48, ng0);
+LAB5:    xsi_set_current_line(52, ng0);
     t2 = (t0 + 868U);
     t6 = *((char **)t2);
-    t2 = (t0 + 3552U);
+    t2 = (t0 + 3616U);
     t7 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t13, t6, t2, 1);
     t8 = (t13 + 12U);
     t14 = *((unsigned int *)t8);
@@ -126,7 +126,7 @@ static void work_a_0163514710_3212880686_p_1(char *t0)
     char *t6;
     char *t7;
 
-LAB0:    xsi_set_current_line(52, ng0);
+LAB0:    xsi_set_current_line(56, ng0);
 
 LAB3:    t1 = (t0 + 868U);
     t2 = *((char **)t1);

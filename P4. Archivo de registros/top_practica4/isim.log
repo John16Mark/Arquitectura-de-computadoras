@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4\top_practica4\top_practica4_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_isim_beh.wdb 
+Running: C:\Documents and Settings\Juan Molina\Mis documentos\Arquitectura\Practica4_arreglo\top_practica4\top_practica4_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/top_practica4_isim_beh.wdb 
 ISim P.20131013 (signature 0x8ef4fb42)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -11,51 +11,22 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /top_practica4/clr 0 -radix bin
+# restart
 # isim force add /top_practica4/clk_aux 0 -radix bin -value 1 -radix bin -time 500 ps -repeat 1 ns
-# isim force add /top_practica4/clr0 0 -radix bin
-# isim force add /top_practica4/clr1 0 -radix bin
-# isim force add /top_practica4/clr2 0 -radix bin
-# isim force add /top_practica4/clr 1 -radix bin
-# isim force add /top_practica4/btn0 0 -radix bin
-# isim force add /top_practica4/btn1 0 -radix bin
-# isim force add /top_practica4/btn2 0 -radix bin
 # isim force add /top_practica4/en_w 0 -radix bin
-# isim force add /top_practica4/dato_i 0101 -radix bin
+# isim force add /top_practica4/btn2 0 -radix bin
+# isim force add /top_practica4/btn1 0 -radix bin
+# isim force add /top_practica4/btn0 0 -radix bin
+# isim force add /top_practica4/clr2 0 -radix bin
+# isim force add /top_practica4/clr1 0 -radix bin
+# isim force add /top_practica4/clr0 0 -radix bin
+# isim force add /top_practica4/clr 1 -radix bin
+# isim force add /top_practica4/dato_i 0001 -radix bin
 # run 1.00ns
-# run 1.00ns
-# run 1.00ns
-# isim force add /top_practica4/en_w 1 -radix bin
-# run 1.00ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
 # isim force add /top_practica4/clr 0 -radix bin
 # run 1.00ns
-# isim force add /top_practica4/en_w 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 1 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 1 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 1 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn0 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/en_w 1 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/en_w 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/en_w 1 -radix bin
-# isim force add /top_practica4/dato_i 1000 -radix bin
-# run 1.00ns
-# show driver /top_practica4/en_w
-/top_practica4/en_w has no drivers.
-# isim force add /top_practica4/en_w 0 -radix bin
-# run 1.00ns
-# run 1.00ns
-# isim force add /top_practica4/dato_i 0101 -radix bin
 # isim force add /top_practica4/en_w 1 -radix bin
 # run 1.00ns
 # isim force add /top_practica4/en_w 0 -radix bin
@@ -74,7 +45,8 @@ Finished circuit initialization process.
 # run 1.00ns
 # run 1.00ns
 # isim force add /top_practica4/btn0 0 -radix bin
-# isim force add /top_practica4/dato_i 1000 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/dato_i 1111 -radix bin
 # isim force add /top_practica4/en_w 1 -radix bin
 # run 1.00ns
 # isim force add /top_practica4/en_w 0 -radix bin
@@ -92,12 +64,42 @@ Finished circuit initialization process.
 # isim force add /top_practica4/btn0 1 -radix bin
 # run 1.00ns
 # run 1.00ns
-# isim force add /top_practica4/btn0 0 -radix bin
 # isim force add /top_practica4/en_w 1 -radix bin
+# isim force add /top_practica4/btn0 0 -radix bin
+# isim force add /top_practica4/dato_i 1100 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/en_w 0 -radix bin
+# isim force add /top_practica4/btn0 1 -radix bin
+# run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/btn0 0 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/btn0 1 -radix bin
+# run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/btn0 0 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/btn0 1 -radix bin
+# run 1.00ns
+# run 1.00ns
 # isim force add /top_practica4/dato_i 0011 -radix bin
+# isim force add /top_practica4/en_w 1 -radix bin
 # run 1.00ns
 # isim force add /top_practica4/en_w 0 -radix bin
 # run 1.00ns
+# isim force add /top_practica4/btn0 0 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/btn1 1 -radix bin
+# run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/btn1 0 -radix bin
+# run 1.00ns
+# isim force add /top_practica4/btn1 1 -radix bin
+# run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/btn1 0 -radix bin
+# run all
+Stopped at time : 314071 ns : File "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/e_r/e_r.vhd" Line 47
 # isim force add /top_practica4/btn1 1 -radix bin
 # run 1.00ns
 # run 1.00ns
@@ -123,39 +125,89 @@ Finished circuit initialization process.
 # run 1.00ns
 # isim force add /top_practica4/btn1 0 -radix bin
 # run 1.00ns
-# run 1.00ns
 # isim force add /top_practica4/btn1 1 -radix bin
 # run 1.00ns
 # run 1.00ns
 # isim force add /top_practica4/btn1 0 -radix bin
 # run 1.00ns
+# isim force add /top_practica4/btn1 1 -radix bin
 # run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/btn1 0 -radix bin
 # isim force add /top_practica4/btn2 1 -radix bin
 # run 1.00ns
 # run 1.00ns
 # isim force add /top_practica4/btn2 0 -radix bin
 # run 1.00ns
-# run 1.00ns
-# isim force add /top_practica4/btn2 1 -radix bin
-# run 1.00ns
-# run 1.00ns
-# isim force add /top_practica4/btn2 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn2 1 -radix bin
+# isim force add /top_practica4/btn2 0 -radix bin -value 1 -radix bin -time 1 ns -repeat 2 ns
 # run 1.00ns
 # run 1.00ns
-# isim force add /top_practica4/btn2 0 -radix bin
-# run 1.00ns
-# isim force add /top_practica4/btn2 1 -radix bin
 # run 1.00ns
 # run 1.00ns
-# isim force add /top_practica4/btn2 0 -radix bin
 # run 1.00ns
-# isim force add /top_practica4/btn2 1 -radix bin
+# isim force add /top_practica4/btn2 0 -radix bin -value 1 -radix bin -time 2 ns -repeat 4 ns
 # run 1.00ns
 # run 1.00ns
-# isim force add /top_practica4/btn2 0 -radix bin
 # run 1.00ns
-# isim force add /top_practica4/btn2 1 -radix bin
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# run 1.00ns
+# isim force add /top_practica4/en_w 1 -radix bin
+# isim force add /top_practica4/dato_i 1010 -radix bin
+# run 1.00ns
 # run 1.00ns
 # run 1.00ns

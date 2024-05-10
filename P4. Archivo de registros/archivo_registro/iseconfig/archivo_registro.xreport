@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-05-05T14:39:57</DateModified>
+  <DateModified>2024-05-07T01:30:41</DateModified>
   <ModuleName>archivo_registro</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/archivo_registro/iseconfig/archivo_registro.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/archivo_registro\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/archivo_registro/iseconfig/archivo_registro.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/archivo_registro\</ImplementationReportsDirectory>
   <DateInitialized>2024-04-18T18:18:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -11,7 +11,7 @@ Target Device  : xc6slx16
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun May 05 14:55:19 2024
+Mapped Date    : Tue May 07 02:48:17 2024
 
 Mapping design into LUTs...
 Running directed packing...
@@ -24,47 +24,47 @@ Total REAL time at the beginning of Placer: 8 secs
 Total CPU  time at the beginning of Placer: 7 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:25789cdd) REAL time: 8 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:ee4c2c36) REAL time: 8 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:25789cdd) REAL time: 8 secs 
+Phase 2.7  Design Feasibility Check (Checksum:ee4c2c36) REAL time: 8 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:25789cdd) REAL time: 8 secs 
+Phase 3.31  Local Placement Optimization (Checksum:ee4c2c36) REAL time: 8 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:b29b132c) REAL time: 10 secs 
+(Checksum:12514c35) REAL time: 10 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:b29b132c) REAL time: 10 secs 
+Phase 5.36  Local Placement Optimization (Checksum:12514c35) REAL time: 10 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:b29b132c) REAL time: 10 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:12514c35) REAL time: 10 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:b29b132c) REAL time: 10 secs 
+Phase 7.3  Local Placement Optimization (Checksum:12514c35) REAL time: 10 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:b29b132c) REAL time: 10 secs 
+Phase 8.5  Local Placement Optimization (Checksum:12514c35) REAL time: 10 secs 
 
 Phase 9.8  Global Placement
-..........
-..........
-Phase 9.8  Global Placement (Checksum:a3c974cc) REAL time: 10 secs 
+................
+.............
+Phase 9.8  Global Placement (Checksum:cd6685e2) REAL time: 10 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:a3c974cc) REAL time: 10 secs 
+Phase 10.5  Local Placement Optimization (Checksum:cd6685e2) REAL time: 10 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:848f0804) REAL time: 10 secs 
+Phase 11.18  Placement Optimization (Checksum:46cabcc2) REAL time: 11 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:848f0804) REAL time: 10 secs 
+Phase 12.5  Local Placement Optimization (Checksum:46cabcc2) REAL time: 11 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:848f0804) REAL time: 10 secs 
+Phase 13.34  Placement Validation (Checksum:44a0a2d2) REAL time: 11 secs 
 
 Total REAL time to Placer completion: 11 secs 
 Total CPU  time to Placer completion: 10 secs 
@@ -105,12 +105,12 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    76 out of   2,278    3%
+  Number of occupied Slices:                    80 out of   2,278    3%
   Number of MUXCYs used:                        20 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          232
-    Number with an unused Flip Flop:            66 out of     232   28%
-    Number with an unused LUT:                  88 out of     232   37%
-    Number of fully used LUT-FF pairs:          78 out of     232   33%
+  Number of LUT Flip Flop pairs used:          239
+    Number with an unused Flip Flop:            73 out of     239   30%
+    Number with an unused LUT:                  95 out of     239   39%
+    Number of fully used LUT-FF pairs:          71 out of     239   29%
     Number of unique control sets:              39
     Number of slice register sites lost
       to control set restrictions:             157 out of  18,224    1%

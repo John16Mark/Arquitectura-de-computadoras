@@ -1,20 +1,20 @@
-Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_isim_beh.exe -prj C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_beh.prj work.top_practica4 
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/top_practica4_isim_beh.exe -prj C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/top_practica4_beh.prj work.top_practica4 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../registro/registro.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../mux_32_1/mux_32_1.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../d_5a32/d_5a32.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../e_r/e_r.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../cont/cont.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../clk_divisor/clk_divisor.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/../archivo_registro/archivo_registro.vhd" into library work
-Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../registro/registro.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../mux_32_1/mux_32_1.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../d_5a32/d_5a32.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../e_r/e_r.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../cont/cont.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../clk_divisor/clk_divisor.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/../archivo_registro/archivo_registro.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/top_practica4.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 66700 KB
-Fuse CPU Usage: 453 ms
+Fuse CPU Usage: 374 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
@@ -25,11 +25,11 @@ Compiling architecture behavioral of entity cont [cont_default]
 Compiling architecture behavioral of entity d_5a32 [d_5a32_default]
 Compiling architecture behavioral of entity registro [\registro(4)\]
 Compiling architecture behavioral of entity mux_32_1 [\mux_32_1(4)\]
-Compiling architecture behavioral of entity archivo_registro [archivo_registro_default]
+Compiling architecture behavioral of entity archivo_registro [\archivo_registro(4)\]
 Compiling architecture behavioral of entity top_practica4
 Time Resolution for simulation is 1ps.
 Waiting for 4 sub-compilation(s) to finish...
 Compiled 19 VHDL Units
-Built simulation executable C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/top_practica4/top_practica4_isim_beh.exe
-Fuse Memory Usage: 82640 KB
-Fuse CPU Usage: 687 ms
+Built simulation executable C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/top_practica4/top_practica4_isim_beh.exe
+Fuse Memory Usage: 83664 KB
+Fuse CPU Usage: 577 ms

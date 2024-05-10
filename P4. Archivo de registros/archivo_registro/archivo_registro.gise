@@ -67,7 +67,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1714938592" xil_pn:in_ck="-7442168663906120098" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5248474483423792003" xil_pn:start_ts="1714938582">
+    <transform xil_pn:end_ts="1715067853" xil_pn:in_ck="-7442168663906120098" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5248474483423792003" xil_pn:start_ts="1715067843">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>

@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4/clk_divisor/clk_divisor.vhd";
+static const char *ng0 = "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica4_arreglo/clk_divisor/clk_divisor.vhd";
 extern char *IEEE_P_3620187407;
 
 char *ieee_p_3620187407_sub_436279890_3965413181(char *, char *, char *, char *, int );
@@ -89,7 +89,7 @@ LAB2:    xsi_set_current_line(49, ng0);
 LAB5:    xsi_set_current_line(51, ng0);
     t2 = (t0 + 868U);
     t6 = *((char **)t2);
-    t2 = (t0 + 3656U);
+    t2 = (t0 + 3720U);
     t7 = ieee_p_3620187407_sub_436279890_3965413181(IEEE_P_3620187407, t13, t6, t2, 1);
     t8 = (t13 + 12U);
     t14 = *((unsigned int *)t8);
