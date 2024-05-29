@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/port/port_b.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/port/port_b.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/port/port_b.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/port/port_b.syr" 

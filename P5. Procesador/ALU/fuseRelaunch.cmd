@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU_isim_beh.exe" -prj "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica2/ALU/ALU_beh.prj" "work.ALU" 

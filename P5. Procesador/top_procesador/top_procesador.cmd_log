@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/Arquitectura/Practica5/top_procesador/top_procesador.xst" -ofn "F:/Arquitectura/Practica5/top_procesador/top_procesador.syr" 

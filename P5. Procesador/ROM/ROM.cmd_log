@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/ROM/ROM.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/ROM/ROM.syr" 

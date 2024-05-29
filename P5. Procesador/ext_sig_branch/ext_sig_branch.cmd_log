@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/ext_sig_branch/ext_sig_branch.xst" -ofn "C:/Documents and Settings/Juan Molina/Mis documentos/Arquitectura/Practica5/ext_sig_branch/ext_sig_branch.syr" 

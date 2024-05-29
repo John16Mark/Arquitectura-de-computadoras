@@ -1,0 +1,944 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: top_procesador.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_procesador.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_procesador"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : top_procesador
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "F:\Arquitectura\Practica5\registro\registro.vhd" into library work
+Parsing entity <registro>.
+Parsing architecture <Behavioral> of entity <registro>.
+Parsing VHDL file "F:\Arquitectura\Practica5\mux_32_1\mux_32_1.vhd" into library work
+Parsing entity <mux_32_1>.
+Parsing architecture <Behavioral> of entity <mux_32_1>.
+Parsing VHDL file "F:\Arquitectura\Practica5\d_5a32\d_5a32.vhd" into library work
+Parsing entity <d_5a32>.
+Parsing architecture <Behavioral> of entity <d_5a32>.
+Parsing VHDL file "F:\Arquitectura\Practica5\stack_pointer\stack_pointer.vhd" into library work
+Parsing entity <stack_pointer>.
+Parsing architecture <Behavioral> of entity <stack_pointer>.
+Parsing VHDL file "F:\Arquitectura\Practica5\ROM\ROM.vhd" into library work
+Parsing entity <ROM>.
+Parsing architecture <Behavioral> of entity <rom>.
+Parsing VHDL file "F:\Arquitectura\Practica5\reg_estado\reg_estado.vhd" into library work
+Parsing entity <reg_estado>.
+Parsing architecture <Behavioral> of entity <reg_estado>.
+Parsing VHDL file "F:\Arquitectura\Practica5\RAM\RAM.vhd" into library work
+Parsing entity <RAM>.
+Parsing architecture <Behavioral> of entity <ram>.
+Parsing VHDL file "F:\Arquitectura\Practica5\program_counter\program_counter.vhd" into library work
+Parsing entity <program_counter>.
+Parsing architecture <Behavioral> of entity <program_counter>.
+Parsing VHDL file "F:\Arquitectura\Practica5\port\port.vhd" into library work
+Parsing entity <port_b>.
+Parsing architecture <Behavioral> of entity <port_b>.
+Parsing VHDL file "F:\Arquitectura\Practica5\ext_sig_relative\ext_sig_relative.vhd" into library work
+Parsing entity <ext_sig_relative>.
+Parsing architecture <Behavioral> of entity <ext_sig_relative>.
+Parsing VHDL file "F:\Arquitectura\Practica5\ext_sig_branch\ext_sig_branch.vhd" into library work
+Parsing entity <ext_sig_branch>.
+Parsing architecture <Behavioral> of entity <ext_sig_branch>.
+Parsing VHDL file "F:\Arquitectura\Practica5\dec_instruccion\dec_instruccion.vhd" into library work
+Parsing entity <dec_instruccion>.
+Parsing architecture <Behavioral> of entity <dec_instruccion>.
+Parsing VHDL file "F:\Arquitectura\Practica5\archivo_registro\archivo_registro.vhd" into library work
+Parsing entity <archivo_registro>.
+Parsing architecture <Behavioral> of entity <archivo_registro>.
+Parsing VHDL file "F:\Arquitectura\Practica5\ALU\ALU.vhd" into library work
+Parsing entity <ALU>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "F:\Arquitectura\Practica5\top_procesador\top_procesador.vhd" into library work
+Parsing entity <top_procesador>.
+Parsing architecture <Behavioral> of entity <top_procesador>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top_procesador> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <archivo_registro> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <d_5a32> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <registro> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <mux_32_1> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ALU> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <port_b> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <ext_sig_branch> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ext_sig_relative> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <program_counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ROM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <dec_instruccion> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg_estado> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <stack_pointer> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_procesador>.
+    Related source file is "F:\Arquitectura\Practica5\top_procesador\top_procesador.vhd".
+        N = 8
+    Found 16-bit adder for signal <n0061> created at line 176.
+    Found 16-bit adder for signal <sig_instr_aux> created at line 176.
+    Found 16-bit adder for signal <ram_write_aux> created at line 178.
+    Found 3-bit adder for signal <ret_aux> created at line 182.
+    Found 3-bit subtractor for signal <call_aux> created at line 141.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred   7 Multiplexer(s).
+Unit <top_procesador> synthesized.
+
+Synthesizing Unit <archivo_registro>.
+    Related source file is "F:\Arquitectura\Practica5\archivo_registro\archivo_registro.vhd".
+        N = 8
+    Summary:
+	no macro.
+Unit <archivo_registro> synthesized.
+
+Synthesizing Unit <d_5a32>.
+    Related source file is "F:\Arquitectura\Practica5\d_5a32\d_5a32.vhd".
+    Found 32x32-bit Read Only RAM for signal <sel_w_d[4]_PWR_8_o_wide_mux_0_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <d_5a32> synthesized.
+
+Synthesizing Unit <registro>.
+    Related source file is "F:\Arquitectura\Practica5\registro\registro.vhd".
+        N = 8
+    Found 8-bit register for signal <q_aux>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <registro> synthesized.
+
+Synthesizing Unit <mux_32_1>.
+    Related source file is "F:\Arquitectura\Practica5\mux_32_1\mux_32_1.vhd".
+        N = 8
+    Found 8-bit 32-to-1 multiplexer for signal <O> created at line 36.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <mux_32_1> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "F:\Arquitectura\Practica5\ALU\ALU.vhd".
+        N = 8
+    Found 9-bit adder for signal <A_aux[8]_B_aux[8]_add_2_OUT> created at line 56.
+    Found 9-bit subtractor for signal <GND_10_o_GND_10_o_sub_4_OUT<8:0>> created at line 58.
+    Found 9-bit 8-to-1 multiplexer for signal <F_aux> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   6 Multiplexer(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <port_b>.
+    Related source file is "F:\Arquitectura\Practica5\port\port.vhd".
+        N = 8
+    Found 8-bit register for signal <o_aux>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <port_b> synthesized.
+
+Synthesizing Unit <ext_sig_branch>.
+    Related source file is "F:\Arquitectura\Practica5\ext_sig_branch\ext_sig_branch.vhd".
+WARNING:Xst:647 - Input <Ibr<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Ibr<15:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ext_sig_branch> synthesized.
+
+Synthesizing Unit <ext_sig_relative>.
+    Related source file is "F:\Arquitectura\Practica5\ext_sig_relative\ext_sig_relative.vhd".
+WARNING:Xst:647 - Input <Irel<15:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <ext_sig_relative> synthesized.
+
+Synthesizing Unit <program_counter>.
+    Related source file is "F:\Arquitectura\Practica5\program_counter\program_counter.vhd".
+    Found 16-bit register for signal <q_aux>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <program_counter> synthesized.
+
+Synthesizing Unit <ROM>.
+    Related source file is "F:\Arquitectura\Practica5\ROM\ROM.vhd".
+    Found 32x16-bit Read Only RAM for signal <_n0082>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <ROM> synthesized.
+
+Synthesizing Unit <dec_instruccion>.
+    Related source file is "F:\Arquitectura\Practica5\dec_instruccion\dec_instruccion.vhd".
+    Found 8x1-bit Read Only RAM for signal <sel_rel>
+    Found 16x2-bit Read Only RAM for signal <_n0111>
+    Found 5-bit comparator equal for signal <instr[9]_instr[8]_equal_2_o> created at line 76
+    Found 2-bit comparator lessequal for signal <n0008> created at line 129
+    Found 2-bit comparator greater for signal <instr[11]_INV_43_o> created at line 163
+    Found 4-bit comparator lessequal for signal <n0027> created at line 199
+    Summary:
+	inferred   2 RAM(s).
+	inferred   4 Comparator(s).
+	inferred  75 Multiplexer(s).
+Unit <dec_instruccion> synthesized.
+
+Synthesizing Unit <reg_estado>.
+    Related source file is "F:\Arquitectura\Practica5\reg_estado\reg_estado.vhd".
+    Found 1-bit register for signal <q_aux>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <reg_estado> synthesized.
+
+Synthesizing Unit <RAM>.
+    Related source file is "F:\Arquitectura\Practica5\RAM\RAM.vhd".
+    Found 8x16-bit single-port RAM <Mram_dato> for signal <dato>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <RAM> synthesized.
+
+Synthesizing Unit <stack_pointer>.
+    Related source file is "F:\Arquitectura\Practica5\stack_pointer\stack_pointer.vhd".
+    Found 3-bit register for signal <o_aux>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <stack_pointer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x2-bit single-port Read Only RAM                    : 1
+ 32x16-bit single-port Read Only RAM                   : 1
+ 32x32-bit single-port Read Only RAM                   : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+ 8x16-bit single-port RAM                              : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 3
+ 3-bit adder                                           : 1
+ 3-bit addsub                                          : 1
+ 9-bit addsub                                          : 1
+# Registers                                            : 36
+ 1-bit register                                        : 1
+ 16-bit register                                       : 1
+ 3-bit register                                        : 1
+ 8-bit register                                        : 33
+# Comparators                                          : 4
+ 2-bit comparator greater                              : 1
+ 2-bit comparator lessequal                            : 1
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator equal                                : 1
+# Multiplexers                                         : 92
+ 1-bit 2-to-1 multiplexer                              : 26
+ 16-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 14
+ 32-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 37
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 32-to-1 multiplexer                             : 2
+ 9-bit 2-to-1 multiplexer                              : 6
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <RAM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dato> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 16-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <WE>            | high     |
+    |     addrA          | connected to signal <A>             |          |
+    |     diA            | connected to signal <WD>            |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <RAM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ROM>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0082> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 16-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <A<4:0>>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ROM> synthesized (advanced).
+
+Synthesizing (advanced) Unit <d_5a32>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sel_w_d[4]_PWR_8_o_wide_mux_0_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <sel_w_d>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <d_5a32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <dec_instruccion>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sel_rel> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <instr<15:13>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sel_rel>       |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0111> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 2-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <instr<15:12>>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <dec_instruccion> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top_procesador>.
+The following registers are absorbed into accumulator <PC/q_aux>: 1 register on signal <PC/q_aux>.
+Unit <top_procesador> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x2-bit single-port distributed Read Only RAM        : 1
+ 32x16-bit single-port distributed Read Only RAM       : 1
+ 32x32-bit single-port distributed Read Only RAM       : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+ 8x16-bit single-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 4
+ 16-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 3-bit addsub                                          : 1
+ 9-bit addsub                                          : 1
+# Accumulators                                         : 1
+ 16-bit up loadable accumulator cin                    : 1
+# Registers                                            : 268
+ Flip-Flops                                            : 268
+# Comparators                                          : 4
+ 2-bit comparator greater                              : 1
+ 2-bit comparator lessequal                            : 1
+ 4-bit comparator lessequal                            : 1
+ 5-bit comparator equal                                : 1
+# Multiplexers                                         : 91
+ 1-bit 2-to-1 multiplexer                              : 26
+ 16-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 14
+ 32-bit 2-to-1 multiplexer                             : 1
+ 5-bit 2-to-1 multiplexer                              : 37
+ 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 32-to-1 multiplexer                             : 2
+ 9-bit 2-to-1 multiplexer                              : 6
+# Xors                                                 : 1
+ 9-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <port_b> ...
+
+Optimizing unit <top_procesador> ...
+WARNING:Xst:1710 - FF/Latch <SP/o_aux_0> (without init value) has a constant value of 1 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <archivo_registro> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <dec_instruccion> ...
+WARNING:Xst:1710 - FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[22].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[23].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[24].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[14].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[15].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[20].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[21].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[29].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[30].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[31].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[25].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[26].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[27].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[28].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[4].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[5].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[6].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[0].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[1].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[2].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[3].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[11].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[12].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[13].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[7].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[8].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_4> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_5> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_6> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[9].registros/q_aux_7> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_0> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_1> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_2> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <arch_reg/instanciar_componentes[10].registros/q_aux_3> (without init value) has a constant value of 0 in block <top_procesador>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_procesador, actual ratio is 3.
+FlipFlop PC/q_aux_0 has been replicated 3 time(s)
+FlipFlop PC/q_aux_1 has been replicated 2 time(s)
+FlipFlop PC/q_aux_10 has been replicated 2 time(s)
+FlipFlop PC/q_aux_11 has been replicated 1 time(s)
+FlipFlop PC/q_aux_2 has been replicated 2 time(s)
+FlipFlop PC/q_aux_3 has been replicated 2 time(s)
+FlipFlop PC/q_aux_4 has been replicated 2 time(s)
+FlipFlop PC/q_aux_7 has been replicated 2 time(s)
+FlipFlop PC/q_aux_8 has been replicated 2 time(s)
+FlipFlop PC/q_aux_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_procesador.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 312
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 15
+#      LUT2                        : 19
+#      LUT3                        : 8
+#      LUT4                        : 19
+#      LUT5                        : 40
+#      LUT6                        : 121
+#      MUXCY                       : 37
+#      MUXF7                       : 10
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 80
+#      FDC                         : 36
+#      FDCE                        : 42
+#      FDP                         : 2
+# RAMS                             : 16
+#      RAM16X1S                    : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              80  out of  18224     0%  
+ Number of Slice LUTs:                  239  out of   9112     2%  
+    Number used as Logic:               223  out of   9112     2%  
+    Number used as Memory:               16  out of   2176     0%  
+       Number used as RAM:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    278
+   Number with an unused Flip Flop:     198  out of    278    71%  
+   Number with an unused LUT:            39  out of    278    14%  
+   Number of fully used LUT-FF pairs:    41  out of    278    14%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.003ns (Maximum Frequency: 111.071MHz)
+   Minimum input arrival time before clock: 3.397ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.003ns (frequency: 111.071MHz)
+  Total number of paths / destination ports: 332328 / 186
+-------------------------------------------------------------------------
+Delay:               9.003ns (Levels of Logic = 9)
+  Source:            PC/q_aux_6 (FF)
+  Destination:       sreg/q_aux (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PC/q_aux_6 to sreg/q_aux
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   1.109  PC/q_aux_6 (PC/q_aux_6)
+     LUT6:I0->O            9   0.203   0.830  mem_rom/_n0083<15>_SW0_2 (mem_rom/_n0083<15>_SW01)
+     LUT6:I5->O            7   0.205   1.002  mem_rom/Mmux_O81 (rom_o_aux<1>)
+     LUT6:I3->O           15   0.205   1.086  dec_inst/Mmux_sel_read_r41 (sel_r_r_aux<1>)
+     LUT6:I4->O            3   0.203   0.651  arch_reg/mux_r/Mmux_O_2_f7 (rs_aux<0>)
+     LUT6:I5->O            1   0.205   0.000  UAL/Mmux_F_aux1_rs_lut<0> (UAL/Mmux_F_aux1_rs_lut<0>)
+     XORCY:LI->O           1   0.136   0.580  UAL/Mmux_F_aux1_rs_xor<0> (UAL/Mmux_F_aux1_split<0>)
+     LUT6:I5->O            2   0.205   0.845  UAL/Mmux_F_aux71 (F_aux<0>)
+     LUT5:I2->O            1   0.205   0.580  UAL/Z_SW0 (N12)
+     LUT6:I5->O            1   0.205   0.000  UAL/Z (Z_aux)
+     FDCE:D                    0.102          sreg/q_aux
+    ----------------------------------------
+    Total                      9.003ns (2.321ns logic, 6.682ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 80 / 80
+-------------------------------------------------------------------------
+Offset:              3.397ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       sreg/q_aux (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to sreg/q_aux
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            80   1.222   1.745  clr_IBUF (clr_IBUF)
+     FDCE:CLR                  0.430          sreg/q_aux
+    ----------------------------------------
+    Total                      3.397ns (1.652ns logic, 1.745ns route)
+                                       (48.6% logic, 51.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            puerto/o_aux_7 (FF)
+  Destination:       O<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: puerto/o_aux_7 to O<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.447   0.579  puerto/o_aux_7 (puerto/o_aux_7)
+     OBUF:I->O                 2.571          O_7_OBUF (O<7>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    9.003|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.91 secs
+ 
+--> 
+
+Total memory usage is 148268 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  227 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

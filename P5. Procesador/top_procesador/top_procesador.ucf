@@ -1,0 +1,17 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = V10;
+NET "clr" LOC = A8;
+NET "O[7]" LOC = T11;
+NET "O[6]" LOC = R11;
+NET "O[5]" LOC = N11;
+NET "O[4]" LOC = M11;
+NET "O[3]" LOC = V15;
+NET "O[2]" LOC = U15;
+NET "O[1]" LOC = V16;
+NET "O[0]" LOC = U16;
